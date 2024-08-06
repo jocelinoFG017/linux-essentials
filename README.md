@@ -1,0 +1,6 @@
+# Olá bem vindo ao curso de Linux - Essentials
+
+Conteudo do curso ainda em desenvolvimento....
+
+
+work in progress....
