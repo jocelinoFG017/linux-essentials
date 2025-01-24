@@ -21,7 +21,7 @@ tail -3 filename.txt é igual a tail -n 3 filename.txt
 The pipe | character can be used to send the output of one command to another.
 
 
-he nl command,  adds line numbers to the output.
+the **nl** command,  adds line numbers to the output.
 
 **Input/Output Redirection**
 
@@ -159,3 +159,7 @@ only lines that begin with root should be matched and displayed:
 The pipe character, |, or "alternation operator", acts as an "or" operator. For example, execute the following to attempt to match either sshd, root or operator
 
 grep 'sshd|root|operator' passwd
+
+
+
+...

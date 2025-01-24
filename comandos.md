@@ -1,1 +1,0 @@
-Aqui vai estar todos os comandos com uma brevíssima descrição

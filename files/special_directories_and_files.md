@@ -28,7 +28,7 @@ To create hard links, the **ln** command is used with two arguments. The first a
 
 ln target link_name
 
-When the ln command is used to create a hard link, the link count number increases by one for each additional filename:
+When the **ln** command is used to create a hard link, the link count number increases by one for each additional filename:
 
 sysadmin@localhost:~$ ln file.original file.hard.1
 sysadmin@localhost:~$ ls -li file.*
@@ -58,3 +58,6 @@ Advantage: Soft links can link to a directory.
 You cannot create hard links to directories. Also, a hard link to a file must exist within the same filesystem (partition) as the file that it links to.
 
 The -s option for the ln command creates a symbolic link instead of a hard link. 
+
+
+..../

@@ -19,3 +19,4 @@ para ambos -> parted e gparted
 
 For hardware to function, the Linux kernel usually loads a driver or module. Use the **lsmod** command to view the currently loaded modules:
 
+....

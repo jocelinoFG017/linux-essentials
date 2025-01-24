@@ -92,4 +92,7 @@ The **last** command reads the entire login history from the /var/log/wtmp file 
 
 Consider This
 
-The who command reads from the /var/log/utmp file which logs current users, while the last command reads from the /var/log/wtmp file, which keeps a history of all user logins.
+The **who** command reads from the /var/log/utmp file which logs current users, while the last command reads from the /var/log/wtmp file, which keeps a history of all user logins.
+
+
+...

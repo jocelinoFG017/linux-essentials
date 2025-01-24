@@ -99,3 +99,6 @@ Binários especificos do usuário
     /usr/local/application/bin
     /opt/application/bin
 
+
+
+....

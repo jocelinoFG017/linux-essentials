@@ -67,7 +67,9 @@ ex: rwxr-xr--
 ex: chmod 754 abc.txt
 
 
-The umask command is a feature that is used to determine default permissions that are set when a file or directory is created.
+The **umask** command is a feature that is used to determine default permissions that are set when a file or directory is created.
 
 
 The umask command can be used to display the current umask value:
+
+.../

@@ -1,30 +1,34 @@
-When talking about compression, there are two types:
+Quando falamos sobre compressão, há 2 tipos:
 
-    Lossless: No information is removed from the file. Compressing a file and decompressing it leaves something identical to the original.
-    Lossy: Information might be removed from the file. It is compressed in such a way that uncompressing a file will result in a file that is slightly different from the original. For instance, an image with two subtly different shades of green might be made smaller by treating those two shades as the same. Often, the eye can’t pick out the difference anyway.
-
+    Lossless(Sem perda): Nenhuma informação é removida do arquivo. Compactar um arquivo e descompactá-lo deixa-o idêntico ao original.
+    
+    Lossy(Com perda): As informações podem ser removidas do arquivo. Ele é compactado de tal forma que a descompactação de um arquivo resultará em um arquivo ligeiramente diferente do original. Por exemplo, uma imagem com dois tons de verde sutilmente diferentes pode ficar menor tratando esses dois tons como iguais. Muitas vezes, o olho não consegue perceber a diferença de qualquer maneira.
 
 GZIP
-gzip
 
-gzip namefile/directory
+Comando
+    **gzip**
 
--l mostra as informações de compressão
-ex: gzip -l filename.gz
+Exemplo de uso:
+    **gzip** namefile/directory
 
-Para descomprimir utiliza-se o gunzip ou gzip -d
+**-l** mostra as informações de compressão
+ex: gzip **-l** filename.gz
 
-ARCHIVING
+Para descomprimir utiliza-se o **gunzip** ou **gzip -d**
+
+ARCHIVING(compactar)
+Lembre-se: compactar != Comprimir
 
 CREATE MODE
-Creating an archive with the tar command requires two named options:
+Criar um arquivamente com o comando tar requer 2 opções nomeadas:
 
 tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
--c  Create an archive
--f use archive file
--z Compress (or decompress) an archive using the gzip command.
+-c  Cria um arquivamento
+-f  usa um arquivamento de arquivo
+-z  Comprime ou descomprime um arquivo usando o comando **gzip**
 
-Ao utilizar o bzip2 troca-se o -z por -j
+Ao utilizar o **bzip2** troca-se o **-z** por **-j**
 
 LIST MODE
 
