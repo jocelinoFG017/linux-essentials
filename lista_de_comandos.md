@@ -42,9 +42,31 @@
 | **mkdir**  | Criar uma pasta/diretório        |
 | **touch**  | Criar um arquivo        |
 | **vi**  | vi seguido do nome do arquivo, abre o editor vi para editar esse arquivo     |
-| ****  |         |
+
+#### Comandos de BUSCA
+
+| Comando  | Descrição        |
+|-------------------|----------|
+| **apt-cache search package_name**  | usado para procurar por pacotes e listar informações sobre os pacotes disponíveis        |
+| **apt search package_name**  | Faz a mesma coisa que o comando anterior, a diferença é que a saída é mais descritiva e organizada       |
 | ****  | Visualizar os logs de journal-based        |
 | ****  | Visualizar os logs de journal-based        |
 | ****  | Visualizar os logs de journal-based        |
+
+#### Comandos de INSTALAÇÃO
+
+| Comando  | Descrição        |
+|-------------------|----------|
+| **sudo apt-get install package_name**  | instala o pacote com os privilégios de root       |
+| **sudo apt install package_name**  | Faz a mesma coisa que o comando anterior com a ausência do get     |
 | ****  | Visualizar os logs de journal-based        |
 | ****  | Visualizar os logs de journal-based        |
+
+#### Comandos de REMOÇÃO
+
+| Comando  | Descrição        |
+|-------------------|----------|
+| **sudo apt-get remove package_name**  | remove o pacote instalado no sistema        |
+| **sudo apt remove package_name**  | Faz a mesma coisa que o comando anterior com a ausência do get       |
+
+OBS: Os arquivos de configuração dos pacotes removidos são mantidos no sistema e podem ser utilizados novamente se o pacote for reinstalado no futuro.
