@@ -66,7 +66,6 @@
 
 | Comando  | Descrição        |
 |-------------------|----------|
-| **sudo apt-get remove package_name**  | remove o pacote instalado no sistema        |
+| **sudo apt-get remove package_name**  | remove o pacote instalado no sistema, mas os arquivos de configuração dos pacotes removidos são mantidos no sistema e podem ser utilizados novamente se o pacote for reinstalado no futuro.    |
 | **sudo apt remove package_name**  | Faz a mesma coisa que o comando anterior com a ausência do get       |
-
-OBS: Os arquivos de configuração dos pacotes removidos são mantidos no sistema e podem ser utilizados novamente se o pacote for reinstalado no futuro.
+| **sudo apt purge package_name**  | Remove o pacote e os arquivos de configuração      |
