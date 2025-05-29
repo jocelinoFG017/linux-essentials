@@ -37,35 +37,48 @@
 | **stat**        | Mostra informações mais detalhadas sobre o arquivo incluindo UID e GID       |
 | **umask**       | Usado para determinar permissões padrão que são definidas quando um arquivo ou diretório é criado       |
 | **journalctl**  | Visualizar os logs de journal-based        |
-| **read**  | Lê um entrada do usuário        |
-| **ls**  | Listar arquivos do diretório atual        |
-| **mkdir**  | Criar uma pasta/diretório        |
-| **touch**  | Criar um arquivo        |
-| **vi**  | vi seguido do nome do arquivo, abre o editor vi para editar esse arquivo     |
+| **read**        | Lê um entrada do usuário        |
+| **ls**          | Listar arquivos do diretório atual        |
+| **mkdir**       | Criar uma pasta/diretório        |
+| **touch**       | Criar um arquivo        |
+| **vi**          | vi seguido do nome do arquivo, abre o editor vi para editar esse arquivo     |
 
 #### Comandos de BUSCA
 
 | Comando  | Descrição        |
-|-------------------|----------|
+|----------|------------------|
 | **apt-cache search package_name**  | usado para procurar por pacotes e listar informações sobre os pacotes disponíveis        |
-| **apt search package_name**  | Faz a mesma coisa que o comando anterior, a diferença é que a saída é mais descritiva e organizada       |
+| **apt search package_name**        | Faz a mesma coisa que o comando anterior, a diferença é que a saída é mais descritiva e organizada       |
 | ****  | Visualizar os logs de journal-based        |
 | ****  | Visualizar os logs de journal-based        |
 | ****  | Visualizar os logs de journal-based        |
 
-#### Comandos de INSTALAÇÃO
+#### Comandos de INSTALAÇÃO e ATUALIZAÇÃO
 
 | Comando  | Descrição        |
-|-------------------|----------|
+|----------|------------------|
 | **sudo apt-get install package_name**  | instala o pacote com os privilégios de root       |
-| **sudo apt install package_name**  | Faz a mesma coisa que o comando anterior com a ausência do get     |
-| ****  | Visualizar os logs de journal-based        |
-| ****  | Visualizar os logs de journal-based        |
+| **sudo apt install package_name**      | Faz a mesma coisa que o comando anterior com a ausência do get     |
+| **sudo apt upgrade**                   | Atualiza um ou mais pacotes que tenham uma atualização disponível. Este comando não espera argumentos depois de upgrade( ex: sudo apt upgrade firefox, o firefox aqui é inútil, poderia ser até batata-frita, se o firefox não tiver atualizações, mas o brave tiver, esse comando(sudo apt upgrade firefox) vai atualizar o brave)        |
+| **sudo apt install --only-upgrade package_name**              | Atualiza um pacote específico (ex: sudo apt install --only-upgrade firefox, vai atualizar SOMENTE o firefox)       |
+| **sudo apt dist-upgrade**              | Atualiza somente o kernel       |
+| **sudo apt -f install**                | Instala as dependencias desencontradas de algum pacote que não pode ser instalado por causa de outras bibliotecas requeridas.EX(quero instalar o docker, não consigo por que é necessário que biblioteca X seja instalada antes)       |
+
+obs01 - O comando...
+```sh
+    sudo apt -f install
+```
+Abreviadamente é o mesmo comando que:
+```sh
+    sudo apt --fix-broken install
+```
 
 #### Comandos de REMOÇÃO
 
 | Comando  | Descrição        |
-|-------------------|----------|
+|----------|------------------|
 | **sudo apt-get remove package_name**  | remove o pacote instalado no sistema, mas os arquivos de configuração dos pacotes removidos são mantidos no sistema e podem ser utilizados novamente se o pacote for reinstalado no futuro.    |
-| **sudo apt remove package_name**  | Faz a mesma coisa que o comando anterior com a ausência do get       |
-| **sudo apt purge package_name**  | Remove o pacote e os arquivos de configuração      |
+| **sudo apt remove package_name**      | Faz a mesma coisa que o comando anterior com a ausência do get       |
+| **sudo apt purge package_name**       | Remove o pacote e os arquivos de configuração      |
+| **sudo apt autoremove**               | Remove as bibliotecas não utilizadas por algum programa      |
+

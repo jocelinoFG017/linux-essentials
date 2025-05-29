@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de Perguntas</title>
+</head>
+<body>
+    <h1>Lista de Perguntas</h1>
+
+    <a href="{{ url_for('cadastrar_pergunta') }}">Cadastrar Nova Pergunta</a>
+
+    <ul>
+    {% for pergunta in perguntas %}
+        <li>
+            <strong>{{ pergunta.titulo }}</strong> — Tipo: {{ pergunta.tipo }}
+        </li>
+    {% else %}
+        <li>Nenhuma pergunta cadastrada.</li>
+    {% endfor %}
+    </ul>
+
+    <br>
+    <a href="{{ url_for('quiz') }}">Fazer Quiz</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!-- templates/cadastrar.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Pergunta</title>
+    <script>
+        function mostrarCampos() {
+            const tipo = document.getElementById('tipo').value;
+            document.getElementById('campo_texto').style.display = tipo === 'texto' ? 'block' : 'none';
+            document.getElementById('campo_multipla').style.display = tipo === 'multipla_escolha' ? 'block' : 'none';
+        }
+        window.onload = mostrarCampos;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

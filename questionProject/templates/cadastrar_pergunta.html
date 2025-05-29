@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Pergunta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        form {
+            max-width: 600px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 12px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cadastrar Pergunta</h2>
+    <form method="post">
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo" onchange="mostrarCampos()">
+            <option value="texto">Texto</option>
+            <option value="multipla_escolha">Múltipla Escolha</option>
+        </select>
+
+        <label for="titulo">Título da Pergunta:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <div id="campo_texto">
+            <label for="resposta_texto">Resposta:</label>
+            <input type="text" id="resposta_texto" name="resposta_texto">
+        </div>
+
+        <div id="campo_multipla" style="display:none;">
+            <label>Alternativas:</label>
+            <input type="text" name="a" placeholder="Alternativa A"> A<br>
+            <input type="text" name="b" placeholder="Alternativa B"> B<br>
+            <input type="text" name="c" placeholder="Alternativa C"> C<br>
+            <input type="text" name="d" placeholder="Alternativa D"> D<br>
+            <input type="text" name="e" placeholder="Alternativa E"> E<br><br>
+
+            <label for="resposta_correta">Resposta Correta:</label>
+            <select id="resposta_correta" name="resposta_correta">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+            </select>
+        </div>
+
+        <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script>
+        function mostrarCampos() {
+            const tipo = document.getElementById('tipo').value;
+            const campoTexto = document.getElementById('campo_texto');
+            const campoMultipla = document.getElementById('campo_multipla');
+
+            if (tipo === 'texto') {
+                campoTexto.style.display = 'block';
+                campoMultipla.style.display = 'none';
+            } else if (tipo === 'multipla_escolha') {
+                campoTexto.style.display = 'none';
+                campoMultipla.style.display = 'block';
+            }
+        }
+
+        window.onload = mostrarCampos;
+    </script>
+</body>
+</html>

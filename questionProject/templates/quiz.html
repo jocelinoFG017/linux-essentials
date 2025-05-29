@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+
+    <form method="post" action="/quiz/responder">
+        {% for pergunta in perguntas %}
+            <div style="margin-bottom: 20px;">
+                <p><strong>{{ loop.index }}. {{ pergunta.titulo }}</strong></p>
+
+                {% if pergunta.tipo_id == 1 %}  {# Supondo 1 = texto #}
+                    <input type="text" name="resposta_{{ pergunta.id }}" placeholder="Sua resposta" />
+                {% else %}  {# Múltipla escolha #}
+                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="a" /> A) {{ pergunta.alternativa_a }}</label><br>
+                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="b" /> B) {{ pergunta.alternativa_b }}</label><br>
+                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="c" /> C) {{ pergunta.alternativa_c }}</label><br>
+                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="d" /> D) {{ pergunta.alternativa_d }}</label><br>
+                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="e" /> E) {{ pergunta.alternativa_e }}</label><br>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+        <button type="submit">Enviar Respostas</button>
+    </form>
+</body>
+</html>
