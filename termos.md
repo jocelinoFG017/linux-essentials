@@ -15,6 +15,7 @@
 |NFS    |Network File System|
 |SSL    |Secure Sockets Layer|
 |TLS    |Transport Layer Security|
+|FHS    |Filesystem Hierarchy Standard|
 
 
 ###### Licenças

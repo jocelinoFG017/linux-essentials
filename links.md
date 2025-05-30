@@ -26,7 +26,6 @@
 
 1 - Udemy - [LPI Linux Essentials: Preparatório para a Certificação](https://www.udemy.com/course/lpi-linux-essentials/)
 
-
  - Tutor: Mateus Muller
 
  - Valor do investimento: R$25,00

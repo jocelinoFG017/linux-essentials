@@ -10,7 +10,6 @@
 | **wc**          | Provê o Nº de linhas , palavras e bytes para um arquivo e o total de linhas se mais de um arquivo for especificado       |
 | **cut**         | Extrai colunas de um texto de um arquivo        |
 | **grep**        | Filtrar linhas e/ou a saída de outro comando, ele o conteúdo de arquivos(de pastas não)        |
-| **find**        | Comando de busca, procura recursivamente        |
 | **tr**          | Aceita entrada do teclado, traduz os caracteres e então redireciona-os para a saída        |
 | **fgrep**       | É utilizado para combinar caracteres literais, ignorando significados especiais de expressões regulares        |
 |   **top**       | Comando utilizado para ver processos em tempo real        |
@@ -42,6 +41,14 @@
 | **mkdir**       | Criar uma pasta/diretório        |
 | **touch**       | Criar um arquivo        |
 | **vi**          | vi seguido do nome do arquivo, abre o editor vi para editar esse arquivo     |
+| **echo**        | Gera texto no terminal        |
+| **type**        | Mostra como um comando específico é executado(interno ou externo).        |
+| **unset**        | Remove uma variável      |
+| **env**          | Exibe todas as variáveis de ambiente      |
+| **which**        | Informa local onde está armazenado um comando ou variável      |
+| **tree**        | Exibe uma lista hierárquica de uma árvore de diretórios      |
+| **pwd**        | Mostra a localização/caminho do diretório atual      |
+
 
 #### Comandos de BUSCA
 
@@ -49,9 +56,13 @@
 |----------|------------------|
 | **apt-cache search package_name**  | usado para procurar por pacotes e listar informações sobre os pacotes disponíveis        |
 | **apt search package_name**        | Faz a mesma coisa que o comando anterior, a diferença é que a saída é mais descritiva e organizada       |
+| **locate**        | Procura no banco de dados por arquivos com um nome específico       |
+| **find**          | Comando de busca, procura recursivamente        |
 | ****  | Visualizar os logs de journal-based        |
 | ****  | Visualizar os logs de journal-based        |
 | ****  | Visualizar os logs de journal-based        |
+
+OBS: Ao usar o locate em arquivos criados recentemente, é preciso usar antes o comando updatedb para atualizar o banco de dados de busca;
 
 #### Comandos de INSTALAÇÃO e ATUALIZAÇÃO
 
@@ -63,6 +74,8 @@
 | **sudo apt install --only-upgrade package_name**              | Atualiza um pacote específico (ex: sudo apt install --only-upgrade firefox, vai atualizar SOMENTE o firefox)       |
 | **sudo apt dist-upgrade**              | Atualiza somente o kernel       |
 | **sudo apt -f install**                | Instala as dependencias desencontradas de algum pacote que não pode ser instalado por causa de outras bibliotecas requeridas.EX(quero instalar o docker, não consigo por que é necessário que biblioteca X seja instalada antes)       |
+| **updatedb**  | Atualiza o banco de dados do comando locate|
+
 
 obs01 - O comando...
 ```sh
@@ -81,4 +94,14 @@ Abreviadamente é o mesmo comando que:
 | **sudo apt remove package_name**      | Faz a mesma coisa que o comando anterior com a ausência do get       |
 | **sudo apt purge package_name**       | Remove o pacote e os arquivos de configuração      |
 | **sudo apt autoremove**               | Remove as bibliotecas não utilizadas por algum programa      |
+
+
+#### Comandos de AJUDA
+O diretório **/usr/share/doc** armazena grande parte da documentação.
+
+| Comando  | Descrição        |
+|----------|------------------|
+| **man**         | Exibe a página de manual do comando    |
+| **help**        | ---      |
+| **info**        | Exibe a página de informações do comando   |
 

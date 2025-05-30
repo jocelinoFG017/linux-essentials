@@ -1,7 +1,7 @@
 | English      | to   | Portuguese  |
 |--------------|------|-------------|
 | UNTIL        |->    | até |
-| WHOLE        |->    | todo,toda |
+| WHOLE        |->    | todo, toda |
 | GOING        |->    | indo |
 | DEAL         |->    | lidar |
 | DISCUSSING   |->    | discutindo |
