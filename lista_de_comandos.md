@@ -48,6 +48,7 @@
 | **which**        | Informa local onde está armazenado um comando ou variável      |
 | **tree**        | Exibe uma lista hierárquica de uma árvore de diretórios      |
 | **pwd**        | Mostra a localização/caminho do diretório atual      |
+| **mv**        | serve para mover e renomear arquivos.      |
 
 
 #### Comandos de BUSCA
@@ -63,6 +64,7 @@
 | ****  | Visualizar os logs de journal-based        |
 
 OBS: Ao usar o locate em arquivos criados recentemente, é preciso usar antes o comando updatedb para atualizar o banco de dados de busca;
+OBS2: Quando não passamos nenhuma opção no find, ele mostra uma lista de todos os arquivos, diretórios e subdiretórios do seu diretório atual
 
 #### Comandos de INSTALAÇÃO e ATUALIZAÇÃO
 
@@ -94,6 +96,17 @@ Abreviadamente é o mesmo comando que:
 | **sudo apt remove package_name**      | Faz a mesma coisa que o comando anterior com a ausência do get       |
 | **sudo apt purge package_name**       | Remove o pacote e os arquivos de configuração      |
 | **sudo apt autoremove**               | Remove as bibliotecas não utilizadas por algum programa      |
+| **rm**        | Por padrão o rm sozinho remove somente arquivos     |
+| **rmdir**        | Serve apenas para remover diretórios vazios      |
+| **rm -r**        | remove recursivamente arquivos e diretórios      |
+
+#### Comandos de COPIA
+
+| Comando  | Descrição        |
+|----------|------------------|
+| **cp**         | Por padrão só funciona em arquivo individuais    |
+| **cp -r**        | O uso da flag -r permite a cópia de diretórios      |
+
 
 
 #### Comandos de AJUDA
