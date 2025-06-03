@@ -100,14 +100,12 @@ Abreviadamente é o mesmo comando que:
 | **rmdir**        | Serve apenas para remover diretórios vazios      |
 | **rm -r**        | remove recursivamente arquivos e diretórios      |
 
-#### Comandos de COPIA
+#### Comandos de CÓPIA
 
 | Comando  | Descrição        |
 |----------|------------------|
 | **cp**         | Por padrão só funciona em arquivo individuais    |
 | **cp -r**        | O uso da flag -r permite a cópia de diretórios      |
-
-
 
 #### Comandos de AJUDA
 O diretório **/usr/share/doc** armazena grande parte da documentação.
@@ -118,3 +116,17 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **help**        | ---      |
 | **info**        | Exibe a página de informações do comando   |
 
+#### Comandos de EMPACOTAMENTO
+
+| Comando  | Descrição        |
+|----------|------------------|
+| **tar**        | ---      |
+| ****        | ---      |
+
+#### Comandos de COMPRESSÃO
+
+| Comando  | Descrição        |
+|----------|------------------|
+| ****        | ---      |
+| ****        | ---      |
+| **zip**        | ---      |
