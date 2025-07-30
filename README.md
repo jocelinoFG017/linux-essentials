@@ -9,8 +9,8 @@ O curso é dividido em 5 seções:
 1. A comunidade Linux
 2. O caminho Linux
 3. O poder da linha de comando
-4. 4
-5. 4
+4. O
+5. O
 
 
 Conteúdo do curso ainda em desenvolvimento....
