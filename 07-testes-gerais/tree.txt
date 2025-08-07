@@ -1,0 +1,124 @@
+.
+├── 00-resumos-gerais
+│   ├── archiving_and_compression.md
+│   ├── basic_scripting.md
+│   ├── commands.md
+│   ├── creating_users_and_groups.md
+│   ├── more_chapter7.md
+│   ├── network_configuration.md
+│   ├── ownership_and_permissions.md
+│   ├── README.md
+│   ├── special_directories_and_files.md
+│   ├── system_and_user_security.md
+│   ├── understanding_computer hardware.md
+│   ├── where_data_is_stored.md
+│   └── working_with_text.md
+├── 01-book-lpi
+│   ├── README.md
+│   ├── Topico 01 - Comunidade Linux
+│   │   ├── 1.1 - EvoluçãoLinuxAndSistemasPopulares.md
+│   │   ├── 1.1 - Questoes.md
+│   │   ├── 1.2 - PrincipaisAplicaçõesOpenSource.md
+│   │   ├── 1.2 - Questoes.md
+│   │   ├── 1.3 - EntendendoSoftwareOpenSourceAndSuasLicencas.md
+│   │   ├── 1.3 - Questoes.md
+│   │   ├── 1.4 - ICT_habilidadesAndLinuxWork.md
+│   │   ├── 1.4 - Questoes.md
+│   │   └── README.md
+│   ├── Topico 02 - Caminho Linux
+│   │   ├── 2.1 - BásicoDaLinhaDeComando.md
+│   │   ├── 2.1 - Questoes.md
+│   │   ├── 2.2 - ObterAjudaNaLinhaDeComando.md
+│   │   ├── 2.2 - Questoes.md
+│   │   ├── 2.3 - UsandoDiretórios&ListandoArquivos.md
+│   │   ├── 2.4 - CriandoMovendo&DeletandoArquivos.md
+│   │   ├── README.md
+│   │   └── tests
+│   │       ├── archiving
+│   │       │   └── 3.1.tar
+│   │       ├── compression
+│   │       │   ├── bigfile
+│   │       │   ├── bigfile2
+│   │       │   ├── bigfile3
+│   │       │   ├── bigfile4
+│   │       │   ├── bzip2_compression.tar.bz2
+│   │       │   ├── gzip_compression.tar.gz
+│   │       │   └── xz_compression.tar.xz
+│   │       ├── copying
+│   │       │   ├── directories
+│   │       │   └── files
+│   │       │       ├── hostname
+│   │       │       ├── issue
+│   │       │       └── nsswitch.conf
+│   │       ├── creating
+│   │       ├── globs
+│   │       │   ├── question1
+│   │       │   ├── question13
+│   │       │   ├── question14
+│   │       │   ├── question15
+│   │       │   ├── question2012
+│   │       │   ├── question23
+│   │       │   ├── star10
+│   │       │   ├── star1100
+│   │       │   ├── star2002
+│   │       │   └── star2013
+│   │       └── zip
+│   │           ├── dir
+│   │           │   ├── file
+│   │           │   └── file2
+│   │           └── zipfile.zip
+│   ├── Topico 03 - O Poder da Linha de Comando
+│   │   ├── 3.1 - ComoComprimirArquivos.md
+│   │   ├── 3.2 - ExtraindoDadosDeArquivos.md
+│   │   ├── 3.3 - TransformandoComandoEmScripts.md
+│   │   ├── README.md
+│   │   └── test
+│   │       ├── 3.3-argumentos.sh
+│   │       ├── 3.3-loop-for.sh
+│   │       ├── 3.3-multiplos-argumentos.sh
+│   │       ├── 3.3-retorno-de-argumentos.sh
+│   │       ├── 3.3-saudar-com-for.sh
+│   │       ├── 3.3-shift-com-for.sh
+│   │       ├── 3.3-test-script.sh
+│   │       └── text.txt
+│   └── Topico 04 -  Sistema Operacional Linux
+│       └── README.md
+├── 02-udemy-course
+│   ├── README.md
+│   └── Section03
+│       ├── DistribuiçõesLinux.md
+│       └── MapaMentalDistribuicoes.png
+├── 03-cisco-academy
+│   ├── 01 - introductionToLinux.md
+│   ├── 02 - OperatingSystems.md
+│   └── README.md
+├── 04-challenges
+│   ├── challenge1.md
+│   └── README.md
+├── 05-materiais-complementares
+│   ├── comandos_interessantes.md
+│   ├── cronograma-de-estudos.md
+│   ├── english_words.md
+│   ├── links.md
+│   ├── lista_de_comandos.md
+│   ├── README.md
+│   └── termos.md
+├── 06-question-project
+│   ├── app.py
+│   ├── banco.db
+│   ├── config
+│   │   └── init_db.py
+│   ├── README.md
+│   └── templates
+│       ├── cadastrar_pergunta.html
+│       ├── index.html
+│       ├── listar_perguntas.html
+│       └── quiz.html
+├── 07-testes-gerais
+│   └── tree.txt
+├── images
+│   ├── LEv2_13_2.png
+│   └── LEv2_7_6.png
+└── README.md
+
+28 directories, 94 files
