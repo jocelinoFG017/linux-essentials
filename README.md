@@ -1,18 +1,18 @@
-# Olá bem vindo ao curso de Linux Essentials
+👋 Bem-vindo ao curso Linux Essentials
 
 Instrutor: Jocelino Garcia
+Carga horária total: 8 horas
 
-Total de horas: 8h
+Este curso é dividido em 5 seções principais:
 
-O curso é dividido em 5 seções:
+- [A Comunidade Linux](https://github.com/jocelinoFG017/linux-essentials/01-book-lpi/)
 
-1. A comunidade Linux
-2. O caminho Linux
-3. O poder da linha de comando
-4. O
-5. O
+- [O Caminho Linux](https://github.com/jocelinoFG017/linux-essentials/01-book-lpi/)
 
+- [O Poder da Linha de Comando](https://github.com/jocelinoFG017/linux-essentials/01-book-lpi/)
 
-Conteúdo do curso ainda em desenvolvimento....
+- [O Sistema Operacional Linux](https://github.com/jocelinoFG017/linux-essentials/01-book-lpi/)
 
-work in progress....
+- [Segurança e Permissões de Arquivos](https://github.com/jocelinoFG017/linux-essentials/01-book-lpi/)
+
+🔗 Ao clicar em qualquer tópico acima, você será redirecionado para o respectivo README dentro do repositório.
