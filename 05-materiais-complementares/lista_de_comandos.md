@@ -15,7 +15,7 @@
 |   **top**       | Comando utilizado para ver processos em tempo real        |
 | **pstree**      | Visualizar a árvore de processos        |
 | **ps**          | Mostra os processos atuais rodando no shell atual        |
-| **free**        | Utilizado para ver a memoria utilizada        |
+| **free**        | Utilizado para ver a memória utilizada pelo sistema       |
 | **journalctl**  | Visualizar os logs de journal-based        |
 | **dmesg**       | ver o kernel ring buffer       |
 | **arch**        | Ver a familia do CPU       |
@@ -136,3 +136,18 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | Comando  | Descrição        |
 |----------|------------------|
 | **cat -n**        | Mostra o conteúdo do arquivo com as linhas      |
+
+#### Comandos de Componentes de Hardware
+| Comando  | Descrição        |
+|----------|------------------|
+| **free -m**        | Exibe a memória RAM utilizada em Megabytes      |
+| **lscpu**          | Exibe informações detalhadas do CPU      |
+| **lsblk**          | Lista dispositivos de bloco disponíveis     |
+
+#### Comandos de Processos
+| Comando  | Descrição        |
+|----------|------------------|
+| **top**        | -     |
+| **ps**        | -     |
+| **uptime**        | -     |
+
