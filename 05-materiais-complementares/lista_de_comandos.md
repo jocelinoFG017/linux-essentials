@@ -131,3 +131,8 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **xz file_name**           | Comprimi o arquivo no formato xz     |
 | **gzip file_name**         | Comprimi o arquivo no formato bgzip      |
 | **zip -r new_file_name.zip file_or_folder_name**          | Comprimi um arquivo ou pasta no formato zip      |
+
+#### Comandos para visualização e Debug de Arquivos
+| Comando  | Descrição        |
+|----------|------------------|
+| **cat -n**        | Mostra o conteúdo do arquivo com as linhas      |

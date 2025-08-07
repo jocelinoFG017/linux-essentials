@@ -1,3 +1,0 @@
-3.1 -  ComoComprimirArquivos.md
-3.2 - ExtraindoDadosDeArquivos.md
-test
