@@ -6,3 +6,6 @@ SEG
         Declarar Tópicos
     Oque precisa reforçar?
        Declarar Tópicos
+
+
+Fazer uma planilha com checklist
