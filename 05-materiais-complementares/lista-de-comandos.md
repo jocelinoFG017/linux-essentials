@@ -49,6 +49,7 @@
 | **tree**        | Exibe uma lista hierárquica de uma árvore de diretórios      |
 | **pwd**        | Mostra a localização/caminho do diretório atual      |
 | **mv**        | serve para mover e renomear arquivos.      |
+| **chsh**        | Utilizado para trocar o shell      |
 
 
 #### Comandos de BUSCA
@@ -150,4 +151,49 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **top**        | -     |
 | **ps**        | -     |
 | **uptime**        | -     |
+
+#### Comandos de Redes
+| Comando  | Descrição        |
+|----------|------------------|
+| **ip link show**        | Exibe uma lista de todas as interfaces de rede disponíveis e seus endereços da camada de link     |
+| **ip addr show**        | Verificar endereços IP|
+| **ip addr add endereco.ip/mascara.de.rede dev ens33**         | Adiciona o endereço IP  a interface ens33|
+| **ping -c 3 endereco.ip**        | Verifica se um dispositivo está acessível, depois de 3 solicitações o comando é parado     |
+| **ip route show**        | lista a tabela atual de roteamento IPv4    |
+| **ip route add default via endereco.ip**        | Adiciona/configura uma rota padrão IPv4    |
+| **host nome.do.site**        | Realiza uma pesquisa de DNS     |
+| **dig nome.do.site**        | Realiza uma pesquisa de DNS mais detalhada    |
+| **ss -t**        | Exibe todos os sockets em um computador Linux   |
+
+
+#### Comandos de Contas e usuários
+| Comando  | Descrição        |
+|----------|------------------|
+| **id**        | Lista as informações atuais do usuário no CLI.     |
+| **groups**        | Lista as os grupos do sistema.     |
+| **last**        | Lista a última vez que os usuários logaram no    |
+| **lastb**        | Lista as tentativas mal-sucedidas de login    |
+| **who**        | Lista somente os logins ativos no sistema    |
+| **w**        | Lista somente os logins ativos no sistema com mais detalhes   |
+| **chfn**        | Atualizar as informações no campo GECOS    |
+
+#### Comandos para ADICIONAR e REMOVER usuários e grupos
+
+| Comando  | Descrição        |
+|----------|------------------|
+| **useradd nome_nova_conta**        | Adiciona um nova conta de usuário    |
+| **userdel  nome_conta**        | Remove um nova conta de usuário    |
+| **passwd  nome_conta**        | Adiciona uma senha a conta de usuário    |
+| **groupadd  nome_grupo**        | Cria um novo grupo    |
+| **groupdel nome_grupo**        | Remove um grupo    |
+
+
+#### Comandos permissões de ARQUIVOS
+
+| Comando  | Descrição        |
+|----------|------------------|
+| **chmod**        |Modificar permissoes dos arquivos     |
+| **chmod -R**        |Modificar permissoes dos arquivos recursivamente(inclui arquivo, diretório e subdiretórios)    |
+| **chown**        |Modificar proprietário de arquivos ou diretórios     |
+| **chgrp**        |Alterar somente o grupo proprietário    |
 
