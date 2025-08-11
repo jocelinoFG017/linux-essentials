@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tópico 01
+title: Comunidade Linux
 ---
 
 ### Tópico 01 - Comunidade Linux
