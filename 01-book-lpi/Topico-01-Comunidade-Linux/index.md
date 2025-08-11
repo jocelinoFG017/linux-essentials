@@ -7,7 +7,8 @@ title: Comunidade Linux
 
 Selecione um dos tópicos:
 
-- [Evolução do Linux e Sistemas Populares](1.1-EvolucaoLinuxAndSistemasPopulares.md)
-- [Principais Aplicações Open Source](1.2-PrincipaisAplicacoesOpenSource.md)
-- [Entendendo Software Open Source e Suas Licenças](1.3-EntendendoSoftwareOpenSourceAndSuasLicencas.md)
-- [Habilidades e Linux Work](1.4-HabilidadesAndLinuxWork.md)
+- [Evolução Linux e Sistemas Populares](/linux-essentials/01-book-lpi/Topico-01-Comunidade-Linux/1.1-EvolucaoLinuxAndSistemasPopulares)
+- [Principais Aplicações Open Source](/linux-essentials/01-book-lpi/Topico-01-Comunidade-Linux/1.2-PrincipaisAplicacoesOpenSource)
+- [Entendendo Software Open Source e Licenças](/linux-essentials/01-book-lpi/Topico-01-Comunidade-Linux/1.3-EntendendoSoftwareOpenSourceAndSuasLicencas)
+- [ICT Habilidades e Linux no Trabalho](/linux-essentials/01-book-lpi/Topico-01-Comunidade-Linux/1.4-HabilidadesAndLinuxWork)
+

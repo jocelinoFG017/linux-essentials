@@ -1,4 +1,5 @@
 title: Meu Curso Linux
 theme: minima
 baseurl: "/linux-essentials"
-github_pages_version: 0.10
+permalink: pretty
+github_pages_version: 0.11
