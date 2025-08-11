@@ -3,15 +3,16 @@ layout: default
 title: Início
 ---
 
-# Bem-vindo ao preparatório da certificação **Linux Essentials**
+# Preparatório da certificação **Linux Essentials**
 
 Criado por : [Jocelino Garcia ](https://github.com/jocelinoFG017)
+
 Última atualização: {{ site.time | date: "%d/%m/%Y" }}
 
 Segue as 5 seções principais:
 
 ## 📖 01 - Book LPI
-
+---
 - [Tópico 01 - Comunidade Linux](./01-book-lpi/Topico%2001%20-%20Comunidade%20Linux/README.md)  
 - [Tópico 02 - Caminho Linux](./01-book-lpi/Topico%2002%20-%20Caminho%20Linux/README.md)  
 - [Tópico 03 - Poder da Linha de Comando](./01-book-lpi/Topico%2003%20-%20Poder%20da%20Linha%20de%20Comando/README.md)  
