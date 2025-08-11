@@ -3,12 +3,12 @@ layout: default
 title: Início
 ---
 
-# Bem-vindo ao curso **Linux Essentials**
+# Bem-vindo ao preparatório da certificação **Linux Essentials**
 
-Instrutor: Jocelino Garcia  
-Carga horária total: 8 horas
+Criado por : [Jocelino Garcia ](https://github.com/jocelinoFG017)
+Última atualização: {{ site.time | date: "%d/%m/%Y" }}
 
-Este curso é dividido em 5 seções principais:
+Segue as 5 seções principais:
 
 ## 📖 01 - Book LPI
 
