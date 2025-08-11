@@ -3,8 +3,11 @@ layout: default
 title: Segurança e Permissão de Arquivosx
 ---
 
-### Tópico 05 - Segurança e Permissão de Arquivos
-- [Segurança Básica & Tipo de Usuário](./01-book-lpi/Topico%2005%20-%20Segurança%20e%20Permissão%20de%20Arquivos/5.1%20-%20SegurançaBásica&TipoDeUsuário.md)
-- [Criando Usuários & Grupos](./01-book-lpi/Topico%2005%20-%20Segurança%20e%20Permissão%20de%20Arquivos/5.2%20-%20CriandoUsuários&Grupos.md)
-- [Gerenciando Permissões & Donos de Arquivos](./01-book-lpi/Topico%2005%20-%20Segurança%20e%20Permissão%20de%20Arquivos/5.3%20-%20GerenciandoPermissões&DonosDeArquivos.md)
-- [Diretórios & Arquivos Especiais](./01-book-lpi/Topico%2005%20-%20Segurança%20e%20Permissão%20de%20Arquivos/5.4%20-%20Diretórios&ArquivosEspeciais.md)
+### 5 - Segurança e Permissão de Arquivos
+
+Selecione um dos tópicos:
+
+- [5.1 Seguranca Basica e Tipo de Usuario](/linux-essentials/01-book-lpi/Topico-05-Seguranca-e-Permissao-de-Arquivos/5.1-SegurancaBasicaAndTipoDeUsuario)
+- [5.2 Criando Usuarios e Grupos](/linux-essentials/01-book-lpi/Topico-05-Seguranca-e-Permissao-de-Arquivos/5.2-CriandoUsuariosAndGrupos)
+- [5.3 Gerenciando Permissoes e Donos de Arquivos](/linux-essentials/01-book-lpi/Topico-05-Seguranca-e-Permissao-de-Arquivos/5.3-GerenciandoPermissoesAndDonosDeArquivos)
+- [5.4 Diretorios e Arquivos Especiais](/linux-essentials/01-book-lpi/Topico-05-Seguranca-e-Permissao-de-Arquivos/5.4-DiretoriosAndArquivosEspeciais)

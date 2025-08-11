@@ -3,8 +3,11 @@ layout: default
 title: Sistema Operacional Linux
 ---
 
-### Tópico 04 - Sistema Operacional Linux
-- [Escolhendo um Sistema Operacional](./01-book-lpi/Topico%2004%20-%20Sistema%20Operacional%20Linux/4.1%20-%20EscolhendoUmSistemaOperacional.md)
-- [Entendendo o Hardware](./01-book-lpi/Topico%2004%20-%20Sistema%20Operacional%20Linux/4.2%20-%20EntendendoOHardware.md)
-- [Onde Armazenamos Dados](./01-book-lpi/Topico%2004%20-%20Sistema%20Operacional%20Linux/4.3%20-%20OndeArmazenamosDados.md)
-- [Seu Computador na Rede](./01-book-lpi/Topico%2004%20-%20Sistema%20Operacional%20Linux/4.4%20-%20SeuComputadorNaRede..md)
+### 4 - Sistema Operacional Linux
+
+Selecione um dos tópicos:
+
+- [4.1 - Escolhendo um Sistema Operacional](/linux-essentials/01-book-lpi/Topico-04-Sistema-Operacional-Linux/4.1-EscolhendoUmSistemaOperacional)
+- [4.2 - Entendendo o Hardware](/linux-essentials/01-book-lpi/Topico-04-Sistema-Operacional-Linux/4.2-EntendendoOHardware)
+- [4.3 - Onde Armazenamos Dados](/linux-essentials/01-book-lpi/Topico-04-Sistema-Operacional-Linux/4.3-OndeArmazenamosDados)
+- [4.4 - Seu Computador na Rede](/linux-essentials/01-book-lpi/Topico-04-Sistema-Operacional-Linux/4.4-SeuComputadorNaRede)
