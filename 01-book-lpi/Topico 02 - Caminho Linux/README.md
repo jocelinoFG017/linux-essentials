@@ -1,3 +1,8 @@
+---
+layout: default
+title: Tópico 02
+---
+
 ### Tópico 02 - Caminho Linux
 - [Básico da Linha de Comando](./01-book-lpi/Topico%2002%20-%20Caminho%20Linux/2.1%20-%20BásicoDaLinhaDeComando.md)
 - [Obter Ajuda na Linha de Comando](./01-book-lpi/Topico%2002%20-%20Caminho%20Linux/2.2%20-%20ObterAjudaNaLinhaDeComando.md)
