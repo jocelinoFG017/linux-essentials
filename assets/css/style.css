@@ -153,3 +153,25 @@ pre[class*="language-"] {
 .btn-back:hover {
   text-decoration: underline;
 }
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem; /* mesmo espaçamento que .btn-back já tem */
+  max-width: 900px; /* alinhado com seu .content */
+}
+
+.nav-buttons a.btn-back {
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons a.btn-back:hover {
+  text-decoration: underline;
+  background-color: #f0f0f0;
+}
+
