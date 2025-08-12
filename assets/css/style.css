@@ -65,9 +65,9 @@ body, html {
 /* Conteúdo principal, com margem à esquerda para o menu */
 .content {
   margin-left: 250px;
+  width: calc(100% - 250px);
   padding: 40px 30px;
-  max-width: 900px;
-  width: 100%;
+  max-width: none; /* remove limite */
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0,0,0,0.05);
   min-height: 100vh;
@@ -83,6 +83,7 @@ body, html {
 
   .content {
     margin-left: 0;
+    width: 100%;
   }
 }
 
