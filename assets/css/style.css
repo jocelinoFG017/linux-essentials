@@ -141,3 +141,15 @@ pre[class*="language-"] {
   overflow-x: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+/* botao anterior */
+.btn-back {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
