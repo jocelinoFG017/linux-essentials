@@ -3,7 +3,7 @@ layout: default
 title: Comunidade Linux
 ---
 
-# 1 - Comunidade Linux
+## 1 - Comunidade Linux
 
 Selecione um dos tópicos:
 

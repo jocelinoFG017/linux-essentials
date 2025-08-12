@@ -3,7 +3,7 @@ layout: default
 title: Sistema Operacional Linux
 ---
 
-### 4 - Sistema Operacional Linux
+## 4 - Sistema Operacional Linux
 
 Selecione um dos tópicos:
 
