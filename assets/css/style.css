@@ -153,12 +153,15 @@ pre[class*="language-"] {
 .btn-back:hover {
   text-decoration: underline;
 }
-
 .nav-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem; /* mesmo espaçamento que .btn-back já tem */
-  max-width: 900px; /* alinhado com seu .content */
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: none;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .nav-buttons a.btn-back {
@@ -174,4 +177,3 @@ pre[class*="language-"] {
   text-decoration: underline;
   background-color: #f0f0f0;
 }
-
