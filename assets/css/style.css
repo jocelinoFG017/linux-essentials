@@ -85,6 +85,7 @@ body, html {
     margin-left: 0;
   }
 }
+
 /* Espaçamento entre parágrafos */
 p {
   margin-bottom: 1em;
@@ -108,7 +109,6 @@ th, td {
 }
 
 /* estilo dos subtopicos */
-
 .link-list {
   display: flex;
   flex-direction: column;
@@ -141,6 +141,7 @@ pre[class*="language-"] {
   overflow-x: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
 /* botao anterior */
 .btn-back {
   display: inline-block;
@@ -153,15 +154,26 @@ pre[class*="language-"] {
 .btn-back:hover {
   text-decoration: underline;
 }
+
+/* Navegação dos botões */
 .nav-buttons {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
   width: 100%;
   max-width: none;
   padding: 0 30px;
   box-sizing: border-box;
+}
+
+/* Caso tenha apenas 1 botão */
+.nav-buttons.single-button {
+  justify-content: flex-end;
+}
+
+/* Caso tenha 2 botões */
+.nav-buttons.two-buttons {
+  justify-content: space-between;
 }
 
 .nav-buttons a.btn-back {
