@@ -1,15 +1,15 @@
-# Curso Linux Essentials
+# Preparatório da certificação Linux Essentials
 
-Este repositório contém o conteúdo do curso **Linux Essentials**, hospedado no GitHub Pages.
+Este repositório contém o conteúdo para a **Linux Essentials**, hospedado no GitHub Pages.
 
-📌 **Acesse o site do curso:**  
+📌 **Acesse o GithubPages**  
 [https://jocelinofg017.github.io/linux-essentials/](https://jocelinofg017.github.io/linux-essentials/)
 
-## Sobre o curso
+## Sobre
 Instrutor: Jocelino Garcia  
-Carga horária total: 8 horas
+Tempo de leitura: 3 horas
 
-## Estrutura do curso
+## Estrutura
 - A Comunidade Linux
 - O Caminho Linux
 - O Poder da Linha de Comando
