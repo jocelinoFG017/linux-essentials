@@ -1,21 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
   const selector = document.getElementById("theme-selector");
+  const themeButtons = document.querySelectorAll('.theme-buttons button');
+
+  // Função para aplicar tema e salvar
+  function applyTheme(theme) {
+    document.body.classList.remove("light-theme", "dark-theme", "reading-theme");
+    document.body.classList.add(`${theme}-theme`);
+    localStorage.setItem("site-theme", theme);
+    if (selector) selector.value = theme;
+  }
 
   // Carregar tema salvo
   const savedTheme = localStorage.getItem("site-theme") || "light";
-  document.body.classList.add(`${savedTheme}-theme`);
-  selector.value = savedTheme;
+  applyTheme(savedTheme);
 
-  // Mudar tema
-  selector.addEventListener("change", function () {
-    document.body.classList.remove("light-theme", "dark-theme", "reading-theme");
-    document.body.classList.add(`${this.value}-theme`);
-    localStorage.setItem("site-theme", this.value);
-  });
-});
+  // Mudar tema via select
+  if (selector) {
+    selector.addEventListener("change", function () {
+      applyTheme(this.value);
+    });
+  }
 
-document.querySelectorAll('.theme-buttons button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.body.className = btn.dataset.theme + '-theme';
-  });
+  // Mudar tema via botões (opcional)
+  if (themeButtons.length) {
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => applyTheme(btn.dataset.theme));
+    });
+  }
 });
