@@ -47,7 +47,7 @@ body, html {
 }
 
 .sidebar ul li a {
-  color: #bdc3c7;
+  color: var(--link-color, #bdc3c7);
   text-decoration: none;
   font-size: 16px;
   display: block;
@@ -58,8 +58,8 @@ body, html {
 
 .sidebar ul li a:hover,
 .sidebar ul li a:focus {
-  background-color: #34495e;
-  color: #fff;
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover-color);
 }
 
 /* Conteúdo principal, com margem à esquerda para o menu */
@@ -68,7 +68,7 @@ body, html {
   width: calc(100% - 250px);
   padding: 40px 30px;
   max-width: none; /* remove limite */
-  background-color: #fff;
+  background-color: var(--bg-color);
   box-shadow: 0 0 15px rgba(0,0,0,0.05);
   min-height: 100vh;
 }
@@ -131,7 +131,8 @@ th, td {
 }
 
 .link-list li a:hover {
-  background-color: #34495e;
+  background-color: var(--link-hover-bg, #34495e);
+  color: var(--link-hover-color, #fff);
 }
 
 /* Fundo mais escuro para Prism */
@@ -179,7 +180,7 @@ pre[class*="language-"] {
 }
 
 .nav-buttons a.btn-back {
-  color: #2c3e50;
+  color: var(--link-color);
   font-weight: 600;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -189,5 +190,6 @@ pre[class*="language-"] {
 
 .nav-buttons a.btn-back:hover {
   text-decoration: underline;
-  background-color: #f0f0f0;
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover-color);
 }

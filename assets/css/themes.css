@@ -1,20 +1,43 @@
-/* Tema Claro */
+/* tema claro */
 .light-theme {
-  --bg-color: #ffffff;
-  --text-color: #000000;
+  --bg-color: #f7f9fc;
+  --text-color: #333;
+  --link-color: #2c3e50;
+  --link-bg: #fff;
+  --link-hover-color: #fff;
+  --link-hover-bg: #2c3e50;
+  --sidebar-bg: #2c3e50;
+  --sidebar-color: #ecf0f1;
+  --code-bg: #f5f5f5;
+  --code-color: #333;
 }
-
-/* Tema Escuro */
+/* tema escuro */
 .dark-theme {
   --bg-color: #121212;
-  --text-color: #ffffff;
+  --text-color: #eee;
+  --link-color: #ccc;
+  --link-bg: #2c3e50;
+  --link-hover-color: #fff;
+  --link-hover-bg: #34495e;
+  --sidebar-bg: #2c3e50;
+  --sidebar-color: #ecf0f1;
+  --code-bg: #2d2d2d;
+  --code-color: #fff;
+}
+/* tema de leitura */
+.reading-theme {
+  --bg-color: #fdf6e3;
+  --text-color: #333;
+  --link-color: #2c3e50;
+  --link-bg: #fff;
+  --link-hover-color: #fff;
+  --link-hover-bg: #2c3e50;
+  --sidebar-bg: #eee;
+  --sidebar-color: #333;
+  --code-bg: #f5f5f5;
+  --code-color: #333;
 }
 
-/* Tema Leitura */
-.reading-theme {
-  --bg-color: #fdf6e3; /* tom bege claro */
-  --text-color: #333333;
-}
 
 /* Aplicação das variáveis */
 body {
