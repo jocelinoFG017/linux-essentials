@@ -7,6 +7,7 @@
         <!-- assets locais -->
         <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
         <link rel="stylesheet" href="{{ '/assets/css/cards.css' | relative_url }}" />
+        <link rel="stylesheet" href="{{ '/assets/js/theme.js' | relative_url }}" />
         <!-- Prism CSS -->
         <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
         <!-- Prism JS -->
@@ -32,8 +33,18 @@
                 {{ content }}
             </main>
         </div>
+        <div style="position: fixed; top: 10px; right: 10px;">
+            <select id="theme-selector">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
+                <option value="reading">Leitura</option>
+            </select>
+        </div>
+
         <footer style="text-align:center; padding: 1rem; color: #888; font-size: 0.9rem;">
             Versão: {{ site.github_pages_version }}
         </footer>
+
+        <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     </body>
 </html>

@@ -5,4 +5,4 @@ permalink: pretty
 kramdown:
   input: GFM
   hard_wrap: true
-github_pages_version: 0.21
+github_pages_version: 0.22

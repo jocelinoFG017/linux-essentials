@@ -1,0 +1,24 @@
+/* Tema Claro */
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Tema Escuro */
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+/* Tema Leitura */
+.reading-theme {
+  --bg-color: #fdf6e3; /* tom bege claro */
+  --text-color: #333333;
+}
+
+/* Aplicação das variáveis */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
