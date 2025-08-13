@@ -33,13 +33,12 @@
                 {{ content }}
             </main>
         </div>
-        <div style="position: fixed; top: 10px; right: 10px;">
-            <select id="theme-selector">
-                <option value="light">Claro</option>
-                <option value="dark">Escuro</option>
-                <option value="reading">Leitura</option>
-            </select>
+        <div class="theme-buttons">
+            <button data-theme="light">☀ Claro</button>
+            <button data-theme="dark">🌙 Escuro</button>
+            <button data-theme="reading">📖 Leitura</button>
         </div>
+
 
         <footer style="text-align:center; padding: 1rem; color: #888; font-size: 0.9rem;">
             Versão: {{ site.github_pages_version }}

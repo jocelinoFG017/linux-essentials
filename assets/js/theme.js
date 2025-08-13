@@ -13,3 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("site-theme", this.value);
   });
 });
+
+document.querySelectorAll('.theme-buttons button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.body.className = btn.dataset.theme + '-theme';
+  });
+});

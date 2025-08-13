@@ -45,3 +45,28 @@ body {
   color: var(--text-color);
   transition: background 0.3s ease, color 0.3s ease;
 }
+
+.theme-buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.theme-buttons button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--link-color);
+  background: var(--link-bg);
+  color: var(--link-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.theme-buttons button:hover {
+  background: var(--link-hover-bg);
+  color: var(--link-hover-color);
+}
