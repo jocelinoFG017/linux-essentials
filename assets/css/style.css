@@ -8,8 +8,8 @@
 body, html {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .wrapper {
@@ -20,8 +20,8 @@ body, html {
 /* Sidebar fixa */
 .sidebar {
   width: 250px;
-  background-color: #2c3e50;
-  color: #ecf0f1;
+  background-color: var(--sidebar-bg, #2c3e50);
+  color: var(--sidebar-color, #ecf0f1);
   padding: 30px 20px;
   position: fixed;
   height: 100%;
@@ -123,8 +123,8 @@ th, td {
 .link-list li a {
   display: block;
   padding: 12px 18px;
-  background-color: #2c3e50;
-  color: white;
+  background-color: var(--link-bg, #2c3e50);
+  color: var(--link-color, #fff);
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
@@ -136,7 +136,8 @@ th, td {
 
 /* Fundo mais escuro para Prism */
 pre[class*="language-"] {
-  background: #2d2d2d !important;
+  background: var(--code-bg, #2d2d2d);
+  color: var(--code-color, #fff);
   border-radius: 8px;
   padding: 1rem;
   overflow-x: auto;
