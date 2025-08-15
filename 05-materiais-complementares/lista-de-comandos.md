@@ -186,6 +186,7 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **passwd  nome_conta**        | Adiciona uma senha a conta de usuário    |
 | **groupadd  nome_grupo**        | Cria um novo grupo    |
 | **groupdel nome_grupo**        | Remove um grupo    |
+| **groupmode nome_grupo**        | Mudar o nome de um grupo ou gid(depende da flag usada)    |
 
 
 #### Comandos permissões de ARQUIVOS
