@@ -144,6 +144,10 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **free -m**        | Exibe a memória RAM utilizada em Megabytes      |
 | **lscpu**          | Exibe informações detalhadas do CPU      |
 | **lsblk**          | Lista dispositivos de bloco disponíveis     |
+| **arch**           | Ver a familia do CPU       |
+| **lspci**          | Ver todos os dispositivos conectados na PCI bus       |
+| **lsusb**          | Mostra todos os dispositivos conectados via USB      |
+| **lsmod**          | Exibe os módulos atuais carregados     |
 
 #### Comandos de Processos
 | Comando  | Descrição        |
@@ -164,7 +168,13 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **host nome.do.site**        | Realiza uma pesquisa de DNS     |
 | **dig nome.do.site**        | Realiza uma pesquisa de DNS mais detalhada    |
 | **ss -t**        | Exibe todos os sockets em um computador Linux   |
+| **ifconfig**        | Exibe e configura interfaces de rede (IPs, máscara, MAC, status da interface).    |
+| **netstat**        | Exibe informações sobre conexões de rede, tabelas de roteamento, estatísticas de interfaces e portas em uso (TCP/UDP).     |
+| **ssh**        | Acessar remotamente outro computador via rede de forma segura, criptografando a comunicação.     |
+| **route**        | Mostrar e manipular a tabela de rotas do sistema, ou seja, como o Linux decide para onde enviar pacotes de rede.     |
 
+
+Nota: Em distruibuições Linux mais recentes, o comando `ifconfig` foi substituído pelo comando `ip`. Portanto, é recomendável usar o comando `ip` para gerenciar interfaces de rede. E O `netstat` foi substituído pelo comando `ss`.
 
 #### Comandos de Contas e usuários
 | Comando  | Descrição        |

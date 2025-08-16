@@ -17,6 +17,9 @@
 |TLS    |Transport Layer Security|
 |FHS    |Filesystem Hierarchy Standard|
 |GREP   |Global Regular Expression Print|
+|NAT    |Net Addres Translation|
+|URL    |Uniform Resource Locator|
+|TCP/IP |Transmission Control Protocol/Internet Protocol|
 
 ###### Licenças
 
