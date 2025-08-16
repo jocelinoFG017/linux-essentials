@@ -22,6 +22,7 @@
 
  - Total de vídeos: X vídeos
  - Total de horas : Y horas
+
 ## Pago
 
 1 - Udemy - [LPI Linux Essentials: Preparatório para a Certificação](https://www.udemy.com/course/lpi-linux-essentials/)

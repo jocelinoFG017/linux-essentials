@@ -37,4 +37,3 @@
 |IaaS |Infraestrutura como serviço|
 |PaaS |Plataforma como serviço|
 |SaaS |Software como serviço|
-

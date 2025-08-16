@@ -207,4 +207,3 @@ Nota: Em distruibuições Linux mais recentes, o comando `ifconfig` foi substitu
 | **chmod -R**        |Modificar permissoes dos arquivos recursivamente(inclui arquivo, diretório e subdiretórios)    |
 | **chown**        |Modificar proprietário de arquivos ou diretórios     |
 | **chgrp**        |Alterar somente o grupo proprietário    |
-
