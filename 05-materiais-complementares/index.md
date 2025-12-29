@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Comunidade Linux
+title: Extras
 ---
 
-## 1 - Comunidade Linux
+## Extras
 
 Selecione um dos tópicos:
 

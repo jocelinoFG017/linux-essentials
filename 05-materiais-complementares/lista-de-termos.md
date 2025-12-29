@@ -1,5 +1,3 @@
-### Siglas
-
 | Sigla | Nome Completo|
 |-------|--------------|
 |DHCP   |Dynamic Host Configuration Protocol|

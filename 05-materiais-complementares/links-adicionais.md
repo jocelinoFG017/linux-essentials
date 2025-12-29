@@ -1,5 +1,3 @@
-### Gratuito
-
 <ol>
 
 <li><a href="https://www.lpi.org/pt-br/our-certifications/linux-essentials-overview/"> LPI - Página da certificação</a></li>
