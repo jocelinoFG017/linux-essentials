@@ -1,9 +1,9 @@
-# 🐧 Preparatório da Certificação Linux Essentials
+# 🐧 Preparatório da Certificação Linux Essentials (LPI) – Guia para Iniciantes em Linux
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![LPI](https://img.shields.io/badge/LPI-Linux%20Essentials-blue)
 
-Este repositório reúne materiais de estudo para a **certificação Linux Essentials (LPI)**, com foco em fundamentos do sistema operacional Linux, linha de comando e conceitos essenciais para iniciantes em TI e sistemas Unix-like.
+Este repositório reúne materiais de estudo para a **certificação Linux Essentials (LPI)**, voltado para **iniciantes em Linux**, estudantes de **TI** e candidatos ao **exame 010-160**.
 
 O conteúdo está organizado de forma didática e também é disponibilizado via **GitHub Pages**.
 
@@ -22,6 +22,16 @@ O conteúdo está organizado de forma didática e também é disponibilizado via
 
 ---
 
+## 🎯 Por que usar este repositório?
+
+✔️ Conteúdo alinhado aos tópicos oficiais da LPI  
+✔️ Linguagem simples e objetiva  
+✔️ Ideal para quem nunca usou Linux  
+✔️ Pode ser usado como material de apoio ou revisão  
+✔️ Acessível online e offline  
+
+---
+
 ## 🧠 Conteúdos abordados
 
 O material cobre os principais tópicos exigidos pela certificação Linux Essentials:
@@ -31,7 +41,11 @@ O material cobre os principais tópicos exigidos pela certificação Linux Essen
 - 💻 O Poder da Linha de Comando  
 - ⚙️ O Sistema Operacional Linux  
 - 🔐 Segurança e Permissões de Arquivos  
-- ➕ Extras (cronograma, termos, curiosidades, comandos e materiais complementares)
+- ➕ Extras  
+  - Cronograma de estudos  
+  - Lista de termos  
+  - Comandos essenciais  
+  - Curiosidades e materiais complementares  
 
 ---
 
@@ -45,7 +59,7 @@ linux-essentials/
 ├── 02-udemy-course/      # Conteúdos de cursos complementares
 ├── extras/               # Materiais adicionais
 └── README.md
-``
+```
 
 ## 🚀 Como usar este repositório
 🔹 Opção 1 — Acesso direto (recomendado)
@@ -59,8 +73,10 @@ git clone https://github.com/jocelinoFG017/linux-essentials.git
 cd linux-essentials
 ```
 
-Depois, abra o arquivo index.html no navegador
-ou utilize um servidor local simples:
+Depois:
+- Abra o arquivo `index.html` no navegador
+**ou**
+- Utilize um servidor local simples:
 
 ```sh
 python3 -m http.server
@@ -91,4 +107,7 @@ Sinta-se à vontade para abrir uma Issue ou Pull Request.
 Este projeto é voltado para fins educacionais.
 O uso do conteúdo é livre para estudo e aprendizado.
 
-## ⭐ Se este repositório te ajudou, considere deixar uma estrela!
+## ⭐ Gostou do projeto?
+
+Se este repositório te ajudou nos estudos, considere deixar uma ⭐
+Isso ajuda o projeto a alcançar mais pessoas 🙂
