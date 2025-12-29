@@ -1,4 +1,4 @@
-###### Siglas
+### Siglas
 
 | Sigla | Nome Completo|
 |-------|--------------|
@@ -21,7 +21,7 @@
 |URL    |Uniform Resource Locator|
 |TCP/IP |Transmission Control Protocol/Internet Protocol|
 
-###### Licenças
+### Licenças
 
 |Sigla| Nome Completo|
 |-----|--------------|
@@ -31,7 +31,8 @@
 |FDL  |Free Documentation License|
 
 
-###### Serviços
+### Serviços
+
 | Sigla | Nome Completo                  |
 |-------|--------------------------------|
 | IaaS  | Infrastructure as a Service    |

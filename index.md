@@ -38,9 +38,9 @@ Segue as 5 seções principais:
     <div class="card-content">05 - Segurança e Permissão de Arquivos</div>
   </a>
 
-  <a href="{{ '/01-book-lpi/Topico-05-Seguranca-e-Permissao-de-Arquivos/' | relative_url }}" class="card">
+  <a href="{{ '/01-book-lpi/05-materiais-complementares/' | relative_url }}" class="card">
     <div class="card-bg" style="background-image: url('{{ "/assets/img/extras.jpeg" | relative_url }}');"></div>
-    <div class="card-content">06 - Extras</div>
+    <div class="card-content">Extras</div>
   </a>
 
 </div>

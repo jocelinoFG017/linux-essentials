@@ -134,11 +134,13 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **zip -r new_file_name.zip file_or_folder_name**          | Comprimi um arquivo ou pasta no formato zip      |
 
 #### Comandos para visualização e Debug de Arquivos
+
 | Comando  | Descrição        |
 |----------|------------------|
 | **cat -n**        | Mostra o conteúdo do arquivo com as linhas      |
 
 #### Comandos de Componentes de Hardware
+
 | Comando  | Descrição        |
 |----------|------------------|
 | **free -m**        | Exibe a memória RAM utilizada em Megabytes      |
@@ -150,6 +152,7 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **lsmod**          | Exibe os módulos atuais carregados     |
 
 #### Comandos de Processos
+
 | Comando  | Descrição        |
 |----------|------------------|
 | **top**        | -     |
@@ -157,6 +160,7 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **uptime**        | -     |
 
 #### Comandos de Redes
+
 | Comando  | Descrição        |
 |----------|------------------|
 | **ip link show**        | Exibe uma lista de todas as interfaces de rede disponíveis e seus endereços da camada de link     |
@@ -177,6 +181,7 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 Nota: Em distruibuições Linux mais recentes, o comando `ifconfig` foi substituído pelo comando `ip`. Portanto, é recomendável usar o comando `ip` para gerenciar interfaces de rede. E O `netstat` foi substituído pelo comando `ss`.
 
 #### Comandos de Contas e usuários
+
 | Comando  | Descrição        |
 |----------|------------------|
 | **id**        | Lista as informações atuais do usuário no CLI.     |

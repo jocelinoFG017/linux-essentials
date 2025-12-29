@@ -16,3 +16,7 @@ Tempo de leitura: 3 horas
 - O Sistema Operacional Linux
 - Segurança e Permissão de Arquivos
 - Extras
+
+🌍 Available languages:
+- 🇧🇷 Portuguese (pt-BR)
+- 🇺🇸 English (in progress)
