@@ -15,3 +15,4 @@ Tempo de leitura: 3 horas
 - O Poder da Linha de Comando
 - O Sistema Operacional Linux
 - Segurança e Permissão de Arquivos
+- Extras

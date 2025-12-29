@@ -32,8 +32,8 @@
 
 
 ###### Serviços
-|Sigla| Nome Completo|
-|-----|--------------|
-|IaaS |Infraestrutura como serviço|
-|PaaS |Plataforma como serviço|
-|SaaS |Software como serviço|
+| Sigla | Nome Completo                  |
+|-------|--------------------------------|
+| IaaS  | Infrastructure as a Service    |
+| PaaS  | Platform as a Service          |
+| SaaS  | Software as a Service          |
