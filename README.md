@@ -1,4 +1,7 @@
 # 🐧 Preparatório da Certificação Linux Essentials
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![LPI](https://img.shields.io/badge/LPI-Linux%20Essentials-blue)
 
 Este repositório reúne materiais de estudo para a **certificação Linux Essentials (LPI)**, com foco em fundamentos do sistema operacional Linux, linha de comando e conceitos essenciais para iniciantes em TI e sistemas Unix-like.
 
