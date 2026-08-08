@@ -37,22 +37,38 @@
         <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
         <script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+        <script defer src="{{ '/assets/js/content-tools.js' | relative_url }}"></script>
     </head>
     <body>
         <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
 
         <header class="theme-toolbar" aria-label="Preferências de aparência">
-            <span class="theme-toolbar__label">Tema</span>
-            <div class="theme-buttons" role="group" aria-label="Selecionar tema">
-                <button type="button" data-theme="light" aria-label="Usar tema claro" aria-pressed="false">
-                    <span aria-hidden="true">☀</span> Claro
-                </button>
-                <button type="button" data-theme="dark" aria-label="Usar tema escuro" aria-pressed="false">
-                    <span aria-hidden="true">🌙</span> Escuro
-                </button>
-                <button type="button" data-theme="reading" aria-label="Usar tema de leitura" aria-pressed="false">
-                    <span aria-hidden="true">📖</span> Leitura
-                </button>
+            <form class="site-search" role="search" data-site-search data-index-url="{{ '/search.json' | relative_url }}">
+                <label class="visually-hidden" for="site-search-input">Buscar no conteúdo</label>
+                <div class="search-field">
+                    <span class="search-icon" aria-hidden="true">⌕</span>
+                    <input id="site-search-input" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Buscar no conteúdo" aria-controls="site-search-results" aria-expanded="false" />
+                    <button class="search-clear" type="button" aria-label="Limpar busca" data-search-clear hidden>×</button>
+                </div>
+                <div class="search-results-panel" data-search-panel hidden>
+                    <p class="search-status" data-search-status aria-live="polite"></p>
+                    <ul id="site-search-results" class="search-results" data-search-results></ul>
+                </div>
+            </form>
+
+            <div class="appearance-controls">
+                <span class="theme-toolbar__label">Tema</span>
+                <div class="theme-buttons" role="group" aria-label="Selecionar tema">
+                    <button type="button" data-theme="light" aria-label="Usar tema claro" aria-pressed="false">
+                        <span aria-hidden="true">☀</span> Claro
+                    </button>
+                    <button type="button" data-theme="dark" aria-label="Usar tema escuro" aria-pressed="false">
+                        <span aria-hidden="true">🌙</span> Escuro
+                    </button>
+                    <button type="button" data-theme="reading" aria-label="Usar tema de leitura" aria-pressed="false">
+                        <span aria-hidden="true">📖</span> Leitura
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -79,9 +95,42 @@
                 </nav>
             </aside>
 
+            {% assign progress_enabled = false %}
+            {% if page.path contains '01-book-lpi/' or page.path contains '05-materiais-complementares/' %}
+                {% unless page.path contains '/index.md' or page.path contains '/README.md' %}
+                    {% assign progress_enabled = true %}
+                {% endunless %}
+            {% endif %}
+
             <main id="conteudo-principal" class="content" tabindex="-1">
-                <div class="content-inner">
+                <div class="content-frame" data-content-frame>
+                    <article class="content-inner" data-page-content>
                     {{ content }}
+                    </article>
+
+                    <aside class="content-tools" data-content-tools hidden>
+                        <nav class="auto-toc" aria-label="Sumário desta página" data-auto-toc hidden>
+                            <details open>
+                                <summary>Nesta página</summary>
+                                <ol data-toc-list></ol>
+                            </details>
+                        </nav>
+
+                        {% if progress_enabled %}
+                        <section class="reading-progress" data-reading-progress data-page-key="{{ page.url | escape }}" data-page-path="{{ page.path | escape }}" data-index-url="{{ '/search.json' | relative_url }}" hidden>
+                            <h2>Progresso de leitura</h2>
+                            <p class="reading-progress__status">
+                                <strong data-progress-label>Não iniciada</strong>
+                                <span data-progress-value>0%</span>
+                            </p>
+                            <div class="reading-progress__track" role="progressbar" aria-label="Progresso desta página" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                <span data-progress-bar></span>
+                            </div>
+                            <p class="reading-progress__section" data-section-progress hidden></p>
+                            <button class="btn reading-progress__button" type="button" data-progress-toggle>Marcar como concluída</button>
+                        </section>
+                        {% endif %}
+                    </aside>
                 </div>
             </main>
         </div>

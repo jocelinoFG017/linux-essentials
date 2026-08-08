@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /search.json
+---
+{% assign searchable_pages = site.pages | where: "layout", "default" %}
+[
+{% for document in searchable_pages %}
+  {
+    "title": {{ document.title | default: site.title | jsonify }},
+    "url": {{ document.url | relative_url | jsonify }},
+    "key": {{ document.url | jsonify }},
+    "path": {{ document.path | jsonify }},
+    "trackable": {% if document.path contains '01-book-lpi/' or document.path contains '05-materiais-complementares/' %}{% unless document.path contains '/index.md' or document.path contains '/README.md' %}true{% else %}false{% endunless %}{% else %}false{% endif %},
+    "content": {{ document.content | markdownify | strip_html | normalize_whitespace | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
