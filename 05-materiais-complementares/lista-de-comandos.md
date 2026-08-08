@@ -1,3 +1,10 @@
+---
+layout: default
+title: Lista de comandos
+---
+
+# Lista de comandos
+
 
 | COMANDO     | DESCRIÇÃO |
 | :----:      | ----------- |

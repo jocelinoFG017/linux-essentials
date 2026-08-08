@@ -1,91 +1,64 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Cadastrar Pergunta</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
+{% extends "base.html" %}
 
-        form {
-            max-width: 600px;
-        }
+{% block title %}Cadastrar pergunta · Quiz Linux Essentials{% endblock %}
 
-        label {
-            font-weight: bold;
-        }
+{% block content %}
+<section class="panel">
+    <h1>Cadastrar pergunta</h1>
+    <p class="lead">Crie uma questão de texto ou de múltipla escolha.</p>
 
-        input[type="text"],
-        select {
-            width: 100%;
-            padding: 8px;
-            margin: 6px 0 12px 0;
-            box-sizing: border-box;
-        }
+    {% if erro %}
+        <p class="alert" role="alert">{{ erro }}</p>
+    {% endif %}
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body>
-    <h2>Cadastrar Pergunta</h2>
-    <form method="post">
-        <label for="tipo">Tipo:</label>
-        <select id="tipo" name="tipo" onchange="mostrarCampos()">
-            <option value="texto">Texto</option>
-            <option value="multipla_escolha">Múltipla Escolha</option>
+    <form method="post" class="form-stack">
+        <label for="tipo">Tipo</label>
+        <select id="tipo" name="tipo" onchange="mostrarCampos()" required>
+            <option value="texto" {% if dados.get('tipo', 'texto') == 'texto' %}selected{% endif %}>Texto</option>
+            <option value="multipla_escolha" {% if dados.get('tipo') == 'multipla_escolha' %}selected{% endif %}>Múltipla escolha</option>
         </select>
 
-        <label for="titulo">Título da Pergunta:</label>
-        <input type="text" id="titulo" name="titulo" required>
+        <label for="titulo">Título da pergunta</label>
+        <input type="text" id="titulo" name="titulo" value="{{ dados.get('titulo', '') }}" required maxlength="500">
 
-        <div id="campo_texto">
-            <label for="resposta_texto">Resposta:</label>
-            <input type="text" id="resposta_texto" name="resposta_texto">
+        <div id="campo_texto" class="form-stack">
+            <label for="resposta_texto">Resposta esperada</label>
+            <input type="text" id="resposta_texto" name="resposta_texto" value="{{ dados.get('resposta_texto', '') }}">
         </div>
 
-        <div id="campo_multipla" style="display:none;">
-            <label>Alternativas:</label>
-            <input type="text" name="a" placeholder="Alternativa A"> A<br>
-            <input type="text" name="b" placeholder="Alternativa B"> B<br>
-            <input type="text" name="c" placeholder="Alternativa C"> C<br>
-            <input type="text" name="d" placeholder="Alternativa D"> D<br>
-            <input type="text" name="e" placeholder="Alternativa E"> E<br><br>
+        <fieldset id="campo_multipla" class="form-stack">
+            <legend>Alternativas</legend>
+            {% for letra in ['a', 'b', 'c', 'd', 'e'] %}
+                <label for="alternativa_{{ letra }}">Alternativa {{ letra|upper }}</label>
+                <input type="text" id="alternativa_{{ letra }}" name="{{ letra }}" value="{{ dados.get(letra, '') }}">
+            {% endfor %}
 
-            <label for="resposta_correta">Resposta Correta:</label>
+            <label for="resposta_correta">Resposta correta</label>
             <select id="resposta_correta" name="resposta_correta">
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">D</option>
-                <option value="e">E</option>
+                {% for letra in ['a', 'b', 'c', 'd', 'e'] %}
+                    <option value="{{ letra }}" {% if dados.get('resposta_correta') == letra %}selected{% endif %}>{{ letra|upper }}</option>
+                {% endfor %}
             </select>
-        </div>
+        </fieldset>
 
-        <br>
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Cadastrar pergunta</button>
     </form>
+</section>
 
-    <script>
-        function mostrarCampos() {
-            const tipo = document.getElementById('tipo').value;
-            const campoTexto = document.getElementById('campo_texto');
-            const campoMultipla = document.getElementById('campo_multipla');
+<script>
+    function mostrarCampos() {
+        const multipla = document.getElementById('tipo').value === 'multipla_escolha';
+        const campoTexto = document.getElementById('campo_texto');
+        const campoMultipla = document.getElementById('campo_multipla');
+        const respostaTexto = document.getElementById('resposta_texto');
+        const alternativas = campoMultipla.querySelectorAll('input');
 
-            if (tipo === 'texto') {
-                campoTexto.style.display = 'block';
-                campoMultipla.style.display = 'none';
-            } else if (tipo === 'multipla_escolha') {
-                campoTexto.style.display = 'none';
-                campoMultipla.style.display = 'block';
-            }
-        }
+        campoTexto.hidden = multipla;
+        campoMultipla.hidden = !multipla;
+        respostaTexto.required = !multipla;
+        alternativas.forEach(input => { input.required = multipla; });
+    }
 
-        window.onload = mostrarCampos;
-    </script>
-</body>
-</html>
+    document.addEventListener('DOMContentLoaded', mostrarCampos);
+</script>
+{% endblock %}

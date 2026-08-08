@@ -1,4 +1,18 @@
 /* Reset básico */
+:root {
+  --bg-color: #f7f9fc;
+  --text-color: #273444;
+  --link-color: #ecf0f1;
+  --content-link-color: #1456a0;
+  --link-bg: #34495e;
+  --link-hover-color: #102a43;
+  --link-hover-bg: #d7dee8;
+  --sidebar-bg: #2c3e50;
+  --sidebar-color: #ecf0f1;
+  --code-bg: #f5f5f5;
+  --code-color: #222;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +24,10 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+body {
+  line-height: 1.6;
 }
 
 .wrapper {
@@ -75,15 +93,26 @@ body, html {
 
 /* Responsividade simples */
 @media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
+    padding: 20px;
   }
 
   .content {
     margin-left: 0;
     width: 100%;
+    padding: 32px 20px;
+  }
+
+  table {
+    display: block;
+    white-space: nowrap;
   }
 }
 
@@ -98,6 +127,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 1em;
+  overflow-x: auto;
 }
 
 table, th, td {
@@ -180,12 +210,33 @@ pre[class*="language-"] {
 }
 
 .nav-buttons a.btn-back {
-  color: var(--link-color);
+  color: var(--content-link-color);
   font-weight: 600;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+}
+
+.content a:not(.card):not(.link-list a) {
+  color: var(--content-link-color);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f0b429;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 .nav-buttons a.btn-back:hover {

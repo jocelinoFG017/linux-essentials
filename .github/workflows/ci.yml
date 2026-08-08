@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quiz:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v6
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Instalar dependências
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Testar quiz
+        working-directory: 06-question-project
+        run: python -m pytest
+
+      - name: Validar scripts Shell
+        run: find . -type f -name '*.sh' -exec bash -n {} +
+
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v6
+
+      - name: Configurar Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Gerar site Jekyll
+        run: bundle exec jekyll build --strict_front_matter
+
+      - name: Verificar links internos
+        run: python3 scripts/check_site_links.py _site --baseurl /linux-essentials
+
+      - name: Verificar espaços e marcadores de conflito
+        run: |
+          git show --check --format= HEAD
+          if git grep -nE '^(<<<<<<<|=======|>>>>>>>)'; then
+            exit 1
+          fi

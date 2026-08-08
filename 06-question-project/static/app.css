@@ -1,0 +1,257 @@
+:root {
+    color-scheme: light;
+    --background: #f4f7fb;
+    --surface: #ffffff;
+    --text: #172033;
+    --muted: #5d687b;
+    --primary: #1456a0;
+    --primary-dark: #0d3f78;
+    --border: #d8dfeb;
+    --success: #167345;
+    --danger: #b42318;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem max(1rem, calc((100vw - 960px) / 2));
+    background: #102a43;
+    color: white;
+}
+
+.site-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 1.1rem;
+    font-weight: 750;
+}
+
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container {
+    width: min(100% - 2rem, 960px);
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+.lead {
+    color: var(--muted);
+    margin-top: -.5rem;
+}
+
+.panel {
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    background: var(--surface);
+    box-shadow: 0 8px 24px rgb(23 32 51 / 6%);
+}
+
+.form-stack {
+    display: grid;
+    gap: .8rem;
+}
+
+label,
+legend {
+    font-weight: 650;
+}
+
+input,
+select,
+button,
+.button {
+    min-height: 44px;
+    border-radius: .45rem;
+    font: inherit;
+}
+
+input,
+select {
+    width: 100%;
+    padding: .65rem .75rem;
+    border: 1px solid #9aa8bb;
+    background: white;
+    color: var(--text);
+}
+
+button,
+.button {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: .65rem 1rem;
+    border: 0;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+button:hover,
+.button:hover {
+    background: var(--primary-dark);
+}
+
+button:focus-visible,
+.button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #f0b429;
+    outline-offset: 3px;
+}
+
+.alert {
+    padding: .75rem 1rem;
+    border-left: 4px solid var(--danger);
+    background: #fff1f0;
+    color: #7a271a;
+}
+
+.page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.question-list,
+.result-list {
+    display: grid;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.question-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.tag {
+    padding: .2rem .6rem;
+    border-radius: 999px;
+    background: #e7f0fa;
+    color: #0d3f78;
+    font-size: .85rem;
+    white-space: nowrap;
+}
+
+.question-card {
+    display: grid;
+    gap: .75rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    padding: .7rem;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.radio-option:has(input:checked) {
+    border-color: var(--primary);
+    background: #edf5ff;
+}
+
+.radio-option input {
+    width: auto;
+    min-height: auto;
+    margin-top: .35rem;
+}
+
+.empty-state,
+.score {
+    text-align: center;
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.result-list {
+    margin: 1.5rem 0;
+}
+
+.result-card {
+    border-left-width: 5px;
+}
+
+.result-card.correct {
+    border-left-color: var(--success);
+}
+
+.result-card.incorrect {
+    border-left-color: var(--danger);
+}
+
+.status {
+    font-weight: 750;
+}
+
+.correct .status {
+    color: var(--success);
+}
+
+.incorrect .status {
+    color: var(--danger);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 640px) {
+    .site-header,
+    .page-heading,
+    .question-list li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .container {
+        padding-top: 1.5rem;
+    }
+}

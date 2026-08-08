@@ -1,3 +1,10 @@
+---
+layout: default
+title: Errata do material LPI
+---
+
+# Errata do material LPI
+
 Página 262:
 
 Como está em pt-br:

@@ -22,6 +22,10 @@
   transform: scale(1.05);
 }
 
+.card:focus-visible {
+  transform: translateY(-3px);
+}
+
 .card-bg {
   position: absolute;
   top: 0; left: 0;

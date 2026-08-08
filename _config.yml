@@ -1,8 +1,23 @@
-title: Meu Curso Linux
+title: Linux Essentials — Guia de Estudos
+description: Material de estudo em português para a certificação Linux Essentials (LPI).
 theme: minima
 baseurl: "/linux-essentials"
+url: "https://jocelinofg017.github.io"
 permalink: pretty
 kramdown:
   input: GFM
   hard_wrap: true
-github_pages_version: 0.34
+exclude:
+  - 01-book-lpi/Topico-02-Caminho-Linux/tests
+  - 01-book-lpi/Topico-03-Poder-da-Linha-de-Comando/test
+  - 02-udemy-course
+  - 03-cisco-academy
+  - 04-challenges
+  - 06-question-project
+  - 07-testes-gerais
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - contributing.md
+  - requirements-dev.txt
+  - scripts

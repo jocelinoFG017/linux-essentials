@@ -3,6 +3,7 @@
   --bg-color: #f7f9fc;
   --text-color: #333;
   --link-color: #ecf0f1;
+  --content-link-color: #1456a0;
   --link-bg: #34495e; 
   --link-hover-color: #1a3e5c;
   --link-hover-bg: #aaa1a1;
@@ -16,6 +17,7 @@
   --bg-color: #121212;
   --text-color: #eee;
   --link-color: #ccc;
+  --content-link-color: #8cc8ff;
   --link-bg: #2c3e50;
   --link-hover-color: #fff;
   --link-hover-bg: #34495e;
@@ -29,6 +31,7 @@
   --bg-color: #fdf6e3;
   --text-color: #333;
   --link-color: #2c3e50;
+  --content-link-color: #174f78;
   --link-bg: #fff;
   --link-hover-color: #fff;
   --link-hover-bg: #2c3e50;
@@ -69,4 +72,14 @@ body {
 .theme-buttons button:hover {
   background: var(--link-hover-bg);
   color: var(--link-hover-color);
+}
+
+@media (max-width: 768px) {
+  .theme-buttons {
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    padding: 8px;
+    background: var(--bg-color);
+  }
 }

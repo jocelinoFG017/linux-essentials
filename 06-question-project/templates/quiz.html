@@ -1,30 +1,39 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <title>Quiz</title>
-</head>
-<body>
-    <h1>Quiz</h1>
+{% extends "base.html" %}
 
-    <form method="post" action="/quiz/responder">
-        {% for pergunta in perguntas %}
-            <div style="margin-bottom: 20px;">
-                <p><strong>{{ loop.index }}. {{ pergunta.titulo }}</strong></p>
+{% block title %}Fazer quiz · Linux Essentials{% endblock %}
 
-                {% if pergunta.tipo_id == 1 %}  {# Supondo 1 = texto #}
-                    <input type="text" name="resposta_{{ pergunta.id }}" placeholder="Sua resposta" />
-                {% else %}  {# Múltipla escolha #}
-                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="a" /> A) {{ pergunta.alternativa_a }}</label><br>
-                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="b" /> B) {{ pergunta.alternativa_b }}</label><br>
-                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="c" /> C) {{ pergunta.alternativa_c }}</label><br>
-                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="d" /> D) {{ pergunta.alternativa_d }}</label><br>
-                    <label><input type="radio" name="resposta_{{ pergunta.id }}" value="e" /> E) {{ pergunta.alternativa_e }}</label><br>
-                {% endif %}
-            </div>
-        {% endfor %}
+{% block content %}
+<h1>Quiz</h1>
+<p class="lead">Responda às perguntas e confira o resultado imediatamente.</p>
 
-        <button type="submit">Enviar Respostas</button>
-    </form>
-</body>
-</html>
+{% if perguntas %}
+<form method="post" action="{{ url_for('responder_quiz') }}" class="form-stack">
+    {% for pergunta in perguntas %}
+        <fieldset class="panel question-card">
+            <legend>{{ loop.index }}. {{ pergunta.titulo }}</legend>
+            <input type="hidden" name="pergunta_id" value="{{ pergunta.id }}">
+
+            {% if pergunta.tipo == 'texto' %}
+                <label for="resposta_{{ pergunta.id }}">Sua resposta</label>
+                <input type="text" id="resposta_{{ pergunta.id }}" name="resposta_{{ pergunta.id }}" required>
+            {% else %}
+                {% for letra in ['a', 'b', 'c', 'd', 'e'] %}
+                    <label class="radio-option">
+                        <input type="radio" name="resposta_{{ pergunta.id }}" value="{{ letra }}" {% if loop.first %}required{% endif %}>
+                        <span><strong>{{ letra|upper }})</strong> {{ pergunta['alternativa_' ~ letra] }}</span>
+                    </label>
+                {% endfor %}
+            {% endif %}
+        </fieldset>
+    {% endfor %}
+
+    <button type="submit">Enviar respostas</button>
+</form>
+{% else %}
+    <section class="empty-state panel">
+        <h2>O quiz ainda está vazio</h2>
+        <p>Cadastre pelo menos uma pergunta para começar.</p>
+        <a class="button" href="{{ url_for('cadastrar_pergunta') }}">Cadastrar pergunta</a>
+    </section>
+{% endif %}
+{% endblock %}

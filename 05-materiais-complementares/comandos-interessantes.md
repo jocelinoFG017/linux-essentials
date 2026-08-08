@@ -1,3 +1,10 @@
+---
+layout: default
+title: Comandos interessantes
+---
+
+# Comandos interessantes
+
 Ignora a pasta venv na saída
 ```sh
 tree -I venv
@@ -13,3 +20,6 @@ Ignorar várias pastas com tree
 tree -I 'venv|assets|_layouts|images|00-resumos-gerais|tests|questions' > 07-testes-gerais/tree.txt
 ```
 
+<div class="nav-buttons single-button">
+  <a href="/linux-essentials/05-materiais-complementares/cronograma-de-estudos" class="btn btn-back">Próximo</a>
+</div>

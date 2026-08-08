@@ -1,3 +1,10 @@
+---
+layout: default
+title: Curiosidades
+---
+
+# Curiosidades
+
 1. Link do RANKING das distruibuições Linux mais utilizadas:
 [Ranking](https://distrowatch.com/)
 

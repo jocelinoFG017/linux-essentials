@@ -1,3 +1,10 @@
+---
+layout: default
+title: Lista de termos
+---
+
+# Lista de termos
+
 | Sigla | Nome Completo|
 |-------|--------------|
 |DHCP   |Dynamic Host Configuration Protocol|

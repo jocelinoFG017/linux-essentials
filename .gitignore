@@ -1,2 +1,10 @@
-06-question-project/venv
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+_site/
+.jekyll-cache/
+.sass-cache/
+06-question-project/instance/
 logs.txt

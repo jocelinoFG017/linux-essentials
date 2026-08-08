@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quiz de apoio aos estudos de Linux Essentials">
+    <title>{% block title %}Quiz Linux Essentials{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="{{ url_for('listar_perguntas') }}">Quiz Linux Essentials</a>
+        <nav aria-label="Navegação principal">
+            <a href="{{ url_for('listar_perguntas') }}">Perguntas</a>
+            <a href="{{ url_for('cadastrar_pergunta') }}">Cadastrar</a>
+            <a href="{{ url_for('quiz') }}">Fazer quiz</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

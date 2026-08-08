@@ -1,79 +1,39 @@
-# 🔐 Security Policy
+# 🔐 Política de segurança
 
-## 📌 Visão geral
+## Versões suportadas
 
-Este projeto tem fins **educacionais**, voltado para o estudo da certificação **Linux Essentials (LPI)**.  
-Ele não é um software de produção nem lida com dados sensíveis de usuários.
+Apenas a versão mais recente do branch `main` recebe correções.
 
-Ainda assim, levamos a **segurança e a integridade do conteúdo** a sério.
+## Como relatar uma vulnerabilidade
 
----
+Não abra uma issue pública contendo credenciais, dados pessoais, passos de exploração ou outra informação sensível.
 
-## 🛡️ Versões suportadas
+Use a aba **Security** do repositório e selecione **Report a vulnerability** para criar um relatório privado:
 
-Atualmente, apenas a versão mais recente disponível no branch principal (`main`) é mantida.
+https://github.com/jocelinoFG017/linux-essentials/security/advisories/new
 
-| Versão | Suporte |
-|-------|---------|
-| Latest | ✅ Suportada |
-| Older | ❌ Não suportada |
+Inclua, quando possível:
 
----
+- arquivo, página ou funcionalidade afetada;
+- passos mínimos para reproduzir o problema;
+- impacto esperado;
+- sugestão de correção;
+- indicação de qualquer dado que já tenha sido exposto.
 
-## 🚨 Relato de vulnerabilidades
+Se o recurso de relato privado estiver indisponível, abra uma issue apenas para solicitar um canal de contato, sem revelar detalhes da vulnerabilidade.
 
-Se você identificar algum dos seguintes pontos:
+## Escopo
 
-- Conteúdo que incentive práticas inseguras
-- Scripts ou exemplos com riscos óbvios de segurança
-- Exposição acidental de credenciais, tokens ou dados sensíveis
-- Qualquer comportamento inesperado relacionado aos exemplos de código
+São considerados relevantes:
 
-Por favor, **não abra uma Issue pública imediatamente**.
+- credenciais ou informações sensíveis presentes no repositório;
+- exemplos que possam apagar dados ou comprometer um sistema sem aviso adequado;
+- vulnerabilidades na aplicação Flask do quiz;
+- dependências ou fluxos de publicação comprometidos;
+- injeção de conteúdo ou scripts nas páginas publicadas.
 
-### 📬 Como reportar
+O quiz foi desenvolvido para estudo e execução local. Ele não deve ser exposto diretamente à internet sem autenticação, proteção CSRF, limites de requisição e configuração apropriada de produção.
 
-1. Envie um relatório detalhado via **GitHub Issues**  
-2. Marque a Issue como **Security** (se aplicável)
-3. Descreva claramente:
-   - Onde o problema foi encontrado
-   - Qual o impacto potencial
-   - Sugestão de correção (se possível)
+## Divulgação responsável
 
-O problema será analisado e tratado o mais rápido possível.
-
----
-
-## 📚 Boas práticas de segurança
-
-Este repositório segue algumas diretrizes básicas:
-
-- Nenhuma credencial real é armazenada no código
-- Exemplos de comandos são educacionais e executados em ambiente local
-- Scripts são mantidos simples e comentados
-- O conteúdo evita práticas inseguras por padrão
-
-⚠️ **Importante:**  
-Os exemplos fornecidos devem ser executados **em ambiente de estudo ou laboratório**, nunca diretamente em servidores de produção.
-
----
-
-## 🤝 Contribuições relacionadas à segurança
-
-Contribuições que melhorem a segurança dos exemplos, documentação ou organização do projeto são **muito bem-vindas**.
-
-Sinta-se à vontade para abrir uma Issue ou Pull Request com sugestões de melhoria.
-
----
-
-## 📄 Aviso legal
-
-Este projeto é fornecido **“como está”**, sem garantias.  
-O autor não se responsabiliza por uso inadequado do conteúdo fora do contexto educacional.
-
----
-
-## 👤 Responsável
-
-**Jocelino Garcia**  
-Autor e mantenedor do projeto  
+O responsável pelo projeto analisará o relatório, confirmará o impacto e coordenará a correção antes da divulgação pública. Não há garantia de prazo, mas relatórios claros e reproduzíveis terão prioridade.

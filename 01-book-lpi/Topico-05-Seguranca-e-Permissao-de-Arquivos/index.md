@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Segurança e Permissão de Arquivosx
+title: Segurança e Permissão de Arquivos
 ---
 
 ## 5 - Segurança e Permissão de Arquivos

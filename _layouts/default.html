@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ page.title }}</title>
+        <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+        <meta name="description" content="{{ page.description | default: site.description | escape }}" />
         <!-- assets locais -->
         <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
         <link rel="stylesheet" href="{{ '/assets/css/cards.css' | relative_url }}" />
@@ -35,14 +36,14 @@
             </main>
         </div>
         <div class="theme-buttons">
-            <button data-theme="light">☀ Claro</button>
-            <button data-theme="dark">🌙 Escuro</button>
-            <button data-theme="reading">📖 Leitura</button>
+            <button type="button" data-theme="light" aria-label="Usar tema claro">☀ Claro</button>
+            <button type="button" data-theme="dark" aria-label="Usar tema escuro">🌙 Escuro</button>
+            <button type="button" data-theme="reading" aria-label="Usar tema de leitura">📖 Leitura</button>
         </div>
 
 
         <footer style="text-align:center; padding: 1rem; color: #888; font-size: 0.9rem;">
-            Versão: {{ site.github_pages_version }}
+            Linux Essentials · Conteúdo educacional
         </footer>
 
         <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>

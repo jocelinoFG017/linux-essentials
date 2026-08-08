@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Resultado · Quiz Linux Essentials{% endblock %}
+
+{% block content %}
+<section class="score panel">
+    <p class="eyebrow">Resultado</p>
+    <h1>{{ acertos }} de {{ total }} corretas</h1>
+    {% if total %}
+        <p>Você acertou {{ ((acertos / total) * 100)|round|int }}% do quiz.</p>
+    {% else %}
+        <p>Nenhuma resposta válida foi enviada.</p>
+    {% endif %}
+</section>
+
+<div class="result-list">
+{% for resultado in resultados %}
+    <article class="panel result-card {{ 'correct' if resultado.correta else 'incorrect' }}">
+        <h2>{{ resultado.titulo }}</h2>
+        <p><strong>Sua resposta:</strong> {{ resultado.resposta }}</p>
+        <p><strong>Gabarito:</strong> {{ resultado.gabarito }}</p>
+        <p class="status">{{ 'Correta' if resultado.correta else 'Incorreta' }}</p>
+    </article>
+{% endfor %}
+</div>
+
+<a class="button" href="{{ url_for('quiz') }}">Tentar outro quiz</a>
+{% endblock %}

@@ -1,87 +1,55 @@
-# 🤝 Contribuindo para o Linux Essentials
+# 🤝 Como contribuir
 
-Obrigado por considerar contribuir com este projeto!  
-Toda ajuda é bem-vinda para melhorar a qualidade do conteúdo e ajudar mais pessoas a aprender Linux.
+Contribuições de conteúdo e código são bem-vindas. O projeto busca oferecer material claro, correto e acessível para estudantes de Linux Essentials.
 
-Este repositório tem como objetivo **preparar estudantes para a certificação Linux Essentials (LPI)**.
+## Fluxo recomendado
 
+1. Faça um fork do repositório.
+2. Crie uma branch descritiva: `git switch -c correcao/topico-2`.
+3. Faça alterações pequenas e focadas.
+4. Execute as validações relacionadas.
+5. Envie os commits ao seu fork e abra um pull request.
+
+No pull request, explique o problema, a solução e como a alteração foi testada.
+
+## Contribuições de conteúdo
+
+- Use português claro e revise ortografia e gramática.
+- Explique o motivo e o efeito dos comandos apresentados.
+- Não copie material protegido por direitos autorais.
+- Evite comandos destrutivos sem uma advertência visível e um ambiente seguro de exemplo.
+- Mantenha links internos compatíveis com o `baseurl` do Jekyll.
+- Inclua front matter em toda página publicada:
+
+```yaml
 ---
-
-## 📌 Como você pode contribuir
-
-Você pode contribuir de várias formas, incluindo:
-
-- ✍️ Correção de erros ortográficos ou gramaticais
-- 📚 Melhoria ou expansão de explicações
-- 💡 Adição de exemplos práticos de comandos Linux
-- 🧪 Sugestão de exercícios ou revisões
-- 🌍 Traduções futuras (ex: inglês)
-- 🗂️ Organização e estruturação do conteúdo
-
+layout: default
+title: Título da página
 ---
-
-## 🛠️ Fluxo básico de contribuição
-
-1. **Fork** este repositório
-2. Crie uma branch para sua contribuição:
-
-```bash
-   git checkout -b minha-contribuicao
-```
-3. Faça suas alterações
-4. Commit suas mudanças:
-
-```bash
-git commit -m "Descrição clara da alteração"
 ```
 
-5. Envie para o seu fork:
-```bash
-git push origin minha-contribuicao
+## Validação do site
+
+```sh
+bundle install
+bundle exec jekyll build --strict_front_matter
+python3 scripts/check_site_links.py _site --baseurl /linux-essentials
 ```
 
-6. Abra um Pull Request explicando o que foi alterado
+Confira também a página em uma largura de celular e nos temas claro, escuro e leitura.
 
-# 📝 Boas práticas
+## Validação do quiz
 
-Para manter o projeto organizado:
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-dev.txt
+cd 06-question-project
+python -m pytest
+```
 
-- Utilize linguagem clara e objetiva
-- Evite copiar conteúdos protegidos por direitos autorais
-- Prefira exemplos práticos e simples
-- Mantenha o foco nos tópicos da certificação Linux Essentials
-- Use nomes de arquivos e pastas descritivos
-- Sempre que possível, explique o porquê e não só o como
+Para scripts Shell, execute `bash -n caminho/do/script.sh` antes de enviar.
 
-# 🧪 Testes e validações
+## Relatos de segurança
 
-Antes de enviar sua contribuição, verifique se:
-
-- Os arquivos HTML abrem corretamente no navegador
-- Links não estão quebrados
-- Exemplos de comandos Linux funcionam conforme descrito
-- O conteúdo está coerente com o restante do material
-
-# 🌍 Idiomas
-
-Atualmente o projeto está em:
-
-- 🇧🇷 Português (pt-BR) — idioma principal
-- 🇺🇸 Inglês — em planejamento
-
-Caso queira contribuir com tradução, fique à vontade para abrir uma Issue antes.
-
-# 💬 Dúvidas e sugestões
-
-Use a aba Issues para:
-
-- relatar problemas
-- sugerir melhorias
-- tirar dúvidas sobre o conteúdo
-
-# 📄 Licença e uso do conteúdo
-
-Este projeto tem finalidade educacional.
-Ao contribuir, você concorda que seu conteúdo poderá ser utilizado livremente para fins de estudo.
-
-Obrigado por ajudar a fortalecer a comunidade Linux! 🐧✨
+Não publique tokens, dados pessoais ou detalhes exploráveis em uma issue. Siga o processo privado descrito em [security.md](security.md).
