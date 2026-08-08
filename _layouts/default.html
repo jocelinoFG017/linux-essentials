@@ -3,49 +3,92 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f5f7fa" />
         <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
         <meta name="description" content="{{ page.description | default: site.description | escape }}" />
-        <!-- assets locais -->
+
+        <script>
+            (function () {
+                document.documentElement.classList.add("js");
+                var theme;
+
+                try {
+                    theme = localStorage.getItem("site-theme");
+                } catch (error) {
+                    theme = null;
+                }
+
+                if (!/^(light|dark|reading)$/.test(theme || "")) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+
+                document.documentElement.classList.add(theme + "-theme");
+            }());
+        </script>
+
+        <!-- O tema do Prism é carregado primeiro para permitir ajustes pelos estilos locais. -->
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.css" rel="stylesheet" />
         <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
         <link rel="stylesheet" href="{{ '/assets/css/cards.css' | relative_url }}" />
         <link rel="stylesheet" href="{{ '/assets/css/themes.css' | relative_url }}" />
-        <!-- Prism CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
-        <!-- Prism JS -->
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-        <!-- Prism Toolbar CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.css" rel="stylesheet" />
+
+        <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+        <script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     </head>
     <body>
+        <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+        <header class="theme-toolbar" aria-label="Preferências de aparência">
+            <span class="theme-toolbar__label">Tema</span>
+            <div class="theme-buttons" role="group" aria-label="Selecionar tema">
+                <button type="button" data-theme="light" aria-label="Usar tema claro" aria-pressed="false">
+                    <span aria-hidden="true">☀</span> Claro
+                </button>
+                <button type="button" data-theme="dark" aria-label="Usar tema escuro" aria-pressed="false">
+                    <span aria-hidden="true">🌙</span> Escuro
+                </button>
+                <button type="button" data-theme="reading" aria-label="Usar tema de leitura" aria-pressed="false">
+                    <span aria-hidden="true">📖</span> Leitura
+                </button>
+            </div>
+        </header>
+
         <div class="wrapper">
-            <nav class="sidebar">
-                <h2>Linux Essentials</h2>
-                <ul>
-                <li><a href="{{ '/' | relative_url }}">Início</a></li>
-                <li><a href="{{ '/01-book-lpi/Topico-01-Comunidade-Linux/' | relative_url }}">1. Comunidade Linux</a></li>
-                <li><a href="{{ '/01-book-lpi/Topico-02-Caminho-Linux/' | relative_url }}">2. Caminho Linux</a></li>
-                <li><a href="{{ '/01-book-lpi/Topico-03-Poder-da-Linha-de-Comando/' | relative_url }}">3. Poder da Linha de Comando</a></li>
-                <li><a href="{{ '/01-book-lpi/Topico-04-Sistema-Operacional-Linux/' | relative_url }}">4. Sistema Operacional</a></li>
-                <li><a href="{{ '/01-book-lpi/Topico-05-Seguranca-e-Permissao-de-Arquivos/' | relative_url }}">5. Segurança e Permissão</a></li>
-                <li><a href="{{ '/05-materiais-complementares/' | relative_url }}">Extras</a></li>
-            </nav>
-            <main class="content">
-                {{ content }}
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <a class="site-title" href="{{ '/' | relative_url }}">Linux Essentials</a>
+                    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+                        <span aria-hidden="true">☰</span>
+                        <span>Menu</span>
+                    </button>
+                </div>
+
+                <nav id="site-navigation" class="site-navigation" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active" aria-current="page"{% endif %}>Início</a></li>
+                        <li><a href="{{ '/01-book-lpi/Topico-01-Comunidade-Linux/' | relative_url }}"{% if page.url contains '/Topico-01-Comunidade-Linux/' %} class="is-active" aria-current="location"{% endif %}>1. Comunidade Linux</a></li>
+                        <li><a href="{{ '/01-book-lpi/Topico-02-Caminho-Linux/' | relative_url }}"{% if page.url contains '/Topico-02-Caminho-Linux/' %} class="is-active" aria-current="location"{% endif %}>2. Caminho Linux</a></li>
+                        <li><a href="{{ '/01-book-lpi/Topico-03-Poder-da-Linha-de-Comando/' | relative_url }}"{% if page.url contains '/Topico-03-Poder-da-Linha-de-Comando/' %} class="is-active" aria-current="location"{% endif %}>3. Poder da Linha de Comando</a></li>
+                        <li><a href="{{ '/01-book-lpi/Topico-04-Sistema-Operacional-Linux/' | relative_url }}"{% if page.url contains '/Topico-04-Sistema-Operacional-Linux/' %} class="is-active" aria-current="location"{% endif %}>4. Sistema Operacional</a></li>
+                        <li><a href="{{ '/01-book-lpi/Topico-05-Seguranca-e-Permissao-de-Arquivos/' | relative_url }}"{% if page.url contains '/Topico-05-Seguranca-e-Permissao-de-Arquivos/' %} class="is-active" aria-current="location"{% endif %}>5. Segurança e Permissão</a></li>
+                        <li><a href="{{ '/05-materiais-complementares/' | relative_url }}"{% if page.url contains '/05-materiais-complementares/' %} class="is-active" aria-current="location"{% endif %}>Extras</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main id="conteudo-principal" class="content" tabindex="-1">
+                <div class="content-inner">
+                    {{ content }}
+                </div>
             </main>
         </div>
-        <div class="theme-buttons">
-            <button type="button" data-theme="light" aria-label="Usar tema claro">☀ Claro</button>
-            <button type="button" data-theme="dark" aria-label="Usar tema escuro">🌙 Escuro</button>
-            <button type="button" data-theme="reading" aria-label="Usar tema de leitura">📖 Leitura</button>
-        </div>
 
-
-        <footer style="text-align:center; padding: 1rem; color: #888; font-size: 0.9rem;">
-            Linux Essentials · Conteúdo educacional · Versão: {{ site.github_pages_version }}
+        <footer class="site-footer">
+            <span>Linux Essentials · Conteúdo educacional</span>
+            <span class="site-version">Versão {{ site.github_pages_version }}</span>
         </footer>
-
-        <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     </body>
 </html>
