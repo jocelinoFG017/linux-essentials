@@ -13,16 +13,16 @@ title: Lista de termos
 |FOSS   |Free and Open Source Software|
 |FLOSS  |Free/Libre and Open Source Software|
 |FSF    |Free Software Foundation|
-|GnuPG  |Gnu Privacy Guard|
-|HTTP   |Hyper Text Transfer Protocol|
-|HTML   |Hyper Text Markup Language|
+|GnuPG  |GNU Privacy Guard|
+|HTTP   |Hypertext Transfer Protocol|
+|HTML   |Hypertext Markup Language|
 |LPI    |Linux Professional Institute|
 |NFS    |Network File System|
 |SSL    |Secure Sockets Layer|
 |TLS    |Transport Layer Security|
 |FHS    |Filesystem Hierarchy Standard|
 |GREP   |Global Regular Expression Print|
-|NAT    |Net Addres Translation|
+|NAT    |Network Address Translation|
 |URL    |Uniform Resource Locator|
 |TCP/IP |Transmission Control Protocol/Internet Protocol|
 

@@ -15,21 +15,21 @@ title: Links adicionais
 </ol>
 
 
-### Canais no Youtube
+### Canais no YouTube
 
-1 - Cesar Brod - [Playlist Dicas Linux Essentials](https://www.youtube.com/watch?v=tSM1KdRdFM0&list=PLhxH0n_NvJLcv4wwvoaw7-pIavnJfgK6b)
+1. César Brod — [Playlist Dicas Linux Essentials](https://www.youtube.com/watch?v=tSM1KdRdFM0&list=PLhxH0n_NvJLcv4wwvoaw7-pIavnJfgK6b)
 
  - Total de vídeos: 7 vídeos
- - Total de horas : 2 horas
+ - Total de horas: 2 horas
 
-2 - Genin do Linux - [Curso Linux Essentials](https://www.youtube.com/watch?v=tSM1KdRdFM0&list=PLhxH0n_NvJLcv4wwvoaw7-pIavnJfgK6b)
+2. Genin do Linux — [Curso Linux Essentials](https://www.youtube.com/watch?v=tSM1KdRdFM0&list=PLhxH0n_NvJLcv4wwvoaw7-pIavnJfgK6b)
 
  - Total de vídeos: X vídeos
- - Total de horas : Y horas
+ - Total de horas: Y horas
 
 ### Pago
 
-1 - Udemy - [LPI Linux Essentials: Preparatório para a Certificação](https://www.udemy.com/course/lpi-linux-essentials/)
+1. Udemy — [LPI Linux Essentials: Preparatório para a Certificação](https://www.udemy.com/course/lpi-linux-essentials/)
 
  - Tutor: Mateus Muller
 

@@ -5,11 +5,11 @@ title: Início
 
 # Preparatório da certificação **Linux Essentials**
 
-Criado por: [Jocelino Garcia ](https://github.com/jocelinoFG017)
+Criado por: [Jocelino Garcia](https://github.com/jocelinoFG017)
 
 Última atualização: {{ site.time | date: "%d/%m/%Y" }}
 
-Segue as 5 seções principais:
+Veja as cinco seções principais:
 
 <div class="cards-container">
 
