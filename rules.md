@@ -15,3 +15,7 @@ github_pages_version: 0.35
 # Depois da alteração
 github_pages_version: 0.36
 ```
+
+## Mensagem de commit
+
+Ao final de cada solicitação atendida, deverá ser gerada uma mensagem de commit que descreva de forma clara e objetiva as alterações realizadas.

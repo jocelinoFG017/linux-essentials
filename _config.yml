@@ -4,7 +4,7 @@ theme: minima
 baseurl: "/linux-essentials"
 url: "https://jocelinofg017.github.io"
 permalink: pretty
-github_pages_version: 0.37
+github_pages_version: 0.38
 kramdown:
   input: GFM
   hard_wrap: true
