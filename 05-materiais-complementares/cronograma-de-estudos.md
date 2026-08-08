@@ -16,3 +16,8 @@ title: Cronograma de estudos
 | **Domingo** | **Simulado e revisão teórica**                    | - Resolver questões online ou exercícios de Linux Essentials<br>- Revisar tópicos em que tiver mais dificuldade |
 
 Use este cronograma como checklist e adapte a carga de estudo à sua rotina.
+
+<div class="nav-buttons two-buttons">
+  <a href="/linux-essentials/05-materiais-complementares/comandos-interessantes" class="btn btn-back">Anterior</a>
+  <a href="/linux-essentials/05-materiais-complementares/curiosidades" class="btn btn-back">Próximo</a>
+</div>

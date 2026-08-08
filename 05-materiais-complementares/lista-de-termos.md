@@ -43,3 +43,8 @@ title: Lista de termos
 | IaaS  | Infrastructure as a Service    |
 | PaaS  | Platform as a Service          |
 | SaaS  | Software as a Service          |
+
+<div class="nav-buttons two-buttons">
+  <a href="/linux-essentials/05-materiais-complementares/lista-de-comandos" class="btn btn-back">Anterior</a>
+  <a href="/linux-essentials/05-materiais-complementares/erros_lpi" class="btn btn-back">Próximo</a>
+</div>

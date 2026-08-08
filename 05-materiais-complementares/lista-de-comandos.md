@@ -219,3 +219,8 @@ O diretório **/usr/share/doc** armazena grande parte da documentação.
 | **chmod -R**        | Modifica as permissões dos arquivos recursivamente (inclui arquivos, diretórios e subdiretórios).    |
 | **chown**        | Modifica o proprietário de arquivos ou diretórios.     |
 | **chgrp**        | Altera somente o grupo proprietário.    |
+
+<div class="nav-buttons two-buttons">
+  <a href="/linux-essentials/05-materiais-complementares/curiosidades" class="btn btn-back">Anterior</a>
+  <a href="/linux-essentials/05-materiais-complementares/lista-de-termos" class="btn btn-back">Próximo</a>
+</div>

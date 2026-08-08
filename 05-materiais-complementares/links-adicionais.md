@@ -34,3 +34,8 @@ title: Links adicionais
  - Tutor: Mateus Muller
 
  - Valor do investimento: R$25,00
+
+<div class="nav-buttons two-buttons">
+  <a href="/linux-essentials/05-materiais-complementares/english-words" class="btn btn-back">Anterior</a>
+  <a href="/linux-essentials/" class="btn btn-back">Voltar ao menu</a>
+</div>

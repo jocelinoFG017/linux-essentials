@@ -21,3 +21,8 @@ permissões atuais do grupo e outras.
 
 Como deveria estar:
 ... usuário simplesmente...
+
+<div class="nav-buttons two-buttons">
+  <a href="/linux-essentials/05-materiais-complementares/lista-de-termos" class="btn btn-back">Anterior</a>
+  <a href="/linux-essentials/05-materiais-complementares/english-words" class="btn btn-back">Próximo</a>
+</div>
