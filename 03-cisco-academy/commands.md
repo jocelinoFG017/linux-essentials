@@ -56,7 +56,7 @@ ex: env | grep var1
 obs: utilizar somente o env, irá listar todas as variaveis de ambiente.
 
 A Variavel PATH
-cada diretório listado nela é separado por dois pontos(colon) :
+cada diretório listado nela é separado por dois pontos(colon):
 ex:
 /home/sysadmin/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
@@ -185,7 +185,6 @@ To display the info documentation for a command, use the info command.
 --help option to the command. This option is useful to learn the basic usage of a command quickly without leaving the command line:
 
 
-
 apropos command have no difference with man -k
 both will show the same result
 
@@ -194,9 +193,3 @@ man -f and whatis show same result
 o comando locate busca em uma base de dados local, algumas vezes é preciso rodar o comando updatedb para atualizar essa base, o updatedb requer acesso de root
 
 The whereis command does not search for just any file, only for commands and man pages.
-
-
-
-
-
-
