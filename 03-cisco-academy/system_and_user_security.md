@@ -15,7 +15,7 @@ the /etc directory that contain the account data of the users and groups defined
 User ID
  sysadmin:x:**1001**:1001:System Administrator,,,,:/home/sysadmin:/bin/bash
 
-Primary Group ID 
+Primary Group ID
  sysadmin:x:1001:**1001**:System Administrator,,,,:/home/sysadmin:/bin/bash
 
 Comment
@@ -65,7 +65,7 @@ This field indicates the day the account will expire.An expired account is locke
 
 Reserved
 sysadmin:$6$c75ekQWF$.GpiZpFnIXLzkALjDpZXmjxZcIll14OvL2mFSIfnc1aU2cQ/221QL5AX5RjKXpXPJRQ0uVN35TY3/..c7v0.n0:16874:5:30:7:60:15050**::**
-Currently not used, this field is reserved for future use. 
+Currently not used, this field is reserved for future use.
 
 System accounts
 
@@ -77,16 +77,16 @@ Structure
  Group Name: Password Placehorder: GID: User List
 **mail:x:12:mail,postfix**
 ----------------------------
- The **id** command is used to print user and group information for a specified user. 
+ The **id** command is used to print user and group information for a specified user.
 
 -g show the primary group
 -G show all groups
 
 The **who** command displays a list of users who are currently logged into the system, where they are logged in from, and when they logged in.
 
-The **w** command provides a more detailed list about the users currently on the system than the who command. 
+The **w** command provides a more detailed list about the users currently on the system than the who command.
 
-The **last** command reads the entire login history from the /var/log/wtmp file and displays all logins and reboot records by default. 
+The **last** command reads the entire login history from the /var/log/wtmp file and displays all logins and reboot records by default.
 
 
 

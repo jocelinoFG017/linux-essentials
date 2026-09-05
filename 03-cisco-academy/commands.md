@@ -41,7 +41,7 @@ echo $var1
 
 Para criar um variável global(de ambiente)  utilizamos o export
 
-export var1 
+export var1
 ou
 export var='valor da variável'
 
@@ -57,7 +57,7 @@ obs: utilizar somente o env, irá listar todas as variaveis de ambiente.
 
 A Variavel PATH
 cada diretório listado nela é separado por dois pontos(colon) :
-ex: 
+ex:
 /home/sysadmin/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 De forma detalhada.
@@ -82,7 +82,7 @@ An alias can be used to map longer commands to shorter key sequences
 alias name=command
 
 
-ex: 
+ex:
 ~$ alias mostrardata="date"
 ~$ mostrardata
 Wed Jul 31 20:03:23 UTC 2024
@@ -91,7 +91,7 @@ executar o somente alias, irá mostrar todas as abreviações do sistema.
 
 Funções
 Estrutura:
-function_name () 
+function_name ()
 {
    commands
 }
@@ -109,10 +109,10 @@ my_report(){
 Aspas Simples, duplas e invertida(`)
 
 Simples -> Considera tudo caracter
-Dupla -> Considera quase tudo caracter, salvo exceções como variaveis $var, 
+Dupla -> Considera quase tudo caracter, salvo exceções como variaveis $var,
 
 Invertida -> são usadas ​​para especificar um comando dentro de um comando
-ex: 
+ex:
 date
 Wed Jul 31 20:03:23 UTC 2024
 echo hoje é date
@@ -144,9 +144,9 @@ which -> Use the which command to determine if there is an executable file,
 
 
  **Getting help**
- 
+
  man
- ex: 
+ ex:
  man command
 
 
@@ -169,9 +169,9 @@ man -f passwd
 -k -> apresenta uma breve descrição do que cada comando faz em cada seção
 
 man -k passwd
-In some cases you may not remember the exact name of the command. In these cases you can use the -k option to the man command and provide a keyword argument. 
+In some cases you may not remember the exact name of the command. In these cases you can use the -k option to the man command and provide a keyword argument.
 
-O comando whatis 
+O comando whatis
 É similar ao man -k
 
 

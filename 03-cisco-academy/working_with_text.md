@@ -8,10 +8,10 @@ There are two commonly used pager commands:
 
 HEAD AND TAIL
 
-head 
+head
 show the first 10 lines
 
-tail 
+tail
 show the last 10 lines
 
 tail -3 filename.txt -> irá mostrar as 3 últimas linhas do arquivo
@@ -72,7 +72,7 @@ The grep command can be used to filter lines in a file or the output of another 
 O grep pega o conteudo do arquivo(não de pastas);
 
 - -c retorna a quantidade de linha no arquivo que batem com o objeto da pesquisa.
-  
+
 
 - -n retorna a pesquisa com o Nº da linha ao lado
 
@@ -96,7 +96,7 @@ I am **37** years old.
 I have **2** dogs.
 **123456789101112**
 
-$ can be used to ensure a pattern appears at the end of the line, thereby effectively reducing the search results. 
+$ can be used to ensure a pattern appears at the end of the line, thereby effectively reducing the search results.
 grep 'r$' alpha-first.txt
 B is for Bea**r**
 F is for Flowe**r**
@@ -119,7 +119,7 @@ reef
 reeed
 reed
 reel
-read                     
+read
 
 To match either gray or grey:
 
@@ -131,7 +131,7 @@ The **find** command will begin the search in the directory specified and recurs
 
 find Desktop -name "*nome do que voce quer procurar*"
 
-find /etc -name hosts > find.out 2>&1    
+find /etc -name hosts > find.out 2>&1
 
 The 2>&1 part of the command means "send the stderr (channel 2) to the same place where stdout (channel 1) is going".
 

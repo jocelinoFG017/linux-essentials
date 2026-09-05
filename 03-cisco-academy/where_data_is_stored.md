@@ -13,10 +13,10 @@ alguns arquivos que proveem informações sobre o kernel atual
 /proc/meminfo
 /proc/modules
 
-Para ver a arvore de processos utiliza-se o comando 
+Para ver a arvore de processos utiliza-se o comando
 **pstree**
 
- By default, the **ps** command only shows the current processes running in the current shell. 
+ By default, the **ps** command only shows the current processes running in the current shell.
 
 --forest -> mostrar a relação de processos pai e filho(parent and child)
 
@@ -64,15 +64,15 @@ No exemplo vai atualizar o uso da memoria no terminal a cada 10 segundos...
 /sys 	Virtual filesystem for information about hardware devices connected to the system
 /srv 	Location where site-specific services may be hosted
 /tmp 	Directory where all users are allowed to create temporary files and that is supposed to be cleared at boot time (but often is not)
-/usr 	
+/usr
 
 Second hierarchy
 Non-essential files for multi-user use
-/usr/local 	
+/usr/local
 
 Third hierarchy
 Files for software not originating from distribution
-/var 	
+/var
 
 Fourth hierarchy
 Files that change over time
