@@ -58,6 +58,20 @@ title: Lista de comandos
 | **mv**        | Serve para mover e renomear arquivos.      |
 | **chsh**        | Utilizado para trocar o shell      |
 
+#### Comandos básicos do editor vi
+
+| Comando  | Descrição        |
+|----------|------------------|
+| **vi nome_do_arquivo** | Abre um arquivo existente ou cria um novo arquivo no editor `vi`. |
+| **i** | Entra no modo de inserção para digitar e editar o texto. |
+| **Esc** | Sai do modo de inserção e volta ao modo de comando. |
+| **:w** | Salva as alterações. |
+| **:q** | Sai do editor, desde que não existam alterações pendentes. |
+| **:wq** | Salva as alterações e sai do editor. |
+| **:q!** | Sai do editor sem salvar as alterações. |
+| **u** | Desfaz a última alteração. |
+| **dd** | Exclui a linha atual. |
+
 
 #### Comandos de busca
 
