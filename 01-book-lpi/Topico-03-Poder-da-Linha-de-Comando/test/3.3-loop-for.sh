@@ -5,6 +5,6 @@
 FILES="/usr/sbin/accept /usr/sbin/pwck usr/sbin/chroot"
 
 for file in $FILES
-do 
+do
     ls -lh $file
 done

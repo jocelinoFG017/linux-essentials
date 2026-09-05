@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# este é um comentário 
+# este é um comentário
 
 username="Carol silva pinto"
 echo "Hello_$username"
